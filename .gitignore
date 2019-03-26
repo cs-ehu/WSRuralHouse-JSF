@@ -66,3 +66,4 @@ local.properties
 
 # Ignore build folder
 /build
+/target/
