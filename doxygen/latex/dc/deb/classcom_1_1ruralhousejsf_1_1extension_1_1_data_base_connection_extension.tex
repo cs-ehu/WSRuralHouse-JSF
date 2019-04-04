@@ -1,0 +1,134 @@
+\hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension}{}\section{Referencia de la Clase com.\+ruralhousejsf.\+extension.\+Data\+Base\+Connection\+Extension}
+\label{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension}\index{com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}}
+Diagrama de herencias de com.\+ruralhousejsf.\+extension.\+Data\+Base\+Connection\+Extension\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/deb/classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_ae1fe703d5f0bdd5f29f0f4b9f0645e3e}{before\+All}} (Extension\+Context context)  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final Logger \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_a936421171342cb936e683bceb8e819e8}{L\+O\+G\+G\+ER}} = \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1logger_1_1_console_logger_a520321643663e37d95761134a35505cd}{Console\+Logger.\+create\+Logger}}(Data\+Base\+Connection\+Extension.\+class)
+\item 
+static final String \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_adbba54504b8c15c35363b8c6ee62772f}{D\+R\+I\+V\+ER}} = \char`\"{}com.\+mysql.\+jdbc.\+Driver\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_aec89224948925eb2f40d169ba4dc00a9}{U\+RL}} = \char`\"{}jdbc\+:mysql\+://localhost/Hibernate\+Rural\+House\+J\+SF?use\+S\+SL=false\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_a87696d6ea7d62869301b08d9264182b0}{U\+S\+ER}} = \char`\"{}root\char`\"{}
+\item 
+static final String \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_a8b37073a138c653895098f4a0c0f661f}{P\+A\+S\+S\+W\+O\+RD}} = \char`\"{}root\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+The \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension}{Data\+Base\+Connection\+Extension}} class implements the \mbox{\hyperlink{}{Before\+All\+Callback}} interface, which overrides the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_ae1fe703d5f0bdd5f29f0f4b9f0645e3e}{beforeAll}} }
+\end{DoxyCode}
+
+
+method. 
+
+An Extension can be registered {\ttfamily declaratively} via \mbox{\hyperlink{}{org.\+junit.\+jupiter.\+api.\+extension.\+Extend\+With}}, {\ttfamily programmatically} via \{@linkplain org.\+junit.\+jupiter.\+api.\+extension.\+Register\+Extension @\+Register\+Extension\}, or {\ttfamily automatically} via the \{@linkplain java.\+util.\+Service\+Loader Service\+Loader\} mechanism.
+
+\begin{DoxySeeAlso}{Ver también}
+\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_ae1fe703d5f0bdd5f29f0f4b9f0645e3e}{before\+All(\+Extension\+Context)}} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 26 del archivo Data\+Base\+Connection\+Extension.\+java.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_ae1fe703d5f0bdd5f29f0f4b9f0645e3e}\label{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_ae1fe703d5f0bdd5f29f0f4b9f0645e3e}} 
+\index{com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}!beforeAll@{beforeAll}}
+\index{beforeAll@{beforeAll}!com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}}
+\subsubsection{\texorpdfstring{beforeAll()}{beforeAll()}}
+{\footnotesize\ttfamily void com.\+ruralhousejsf.\+extension.\+Data\+Base\+Connection\+Extension.\+before\+All (\begin{DoxyParamCaption}\item[{Extension\+Context}]{context }\end{DoxyParamCaption}) throws Exception}
+
+This callback is invoked once {\ttfamily before} all tests in the current container, and its only purpose is to test the connection before hand.~\newline
+ This method makes an assertion to checks and guarantee that no issues where found when establishing the connection with the database.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em context} & the current extension context, never
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keyword}{null} }
+\end{DoxyCode}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+Before\+All\+Callback\+::before\+All(\+Extension\+Context) 
+
+Extension\+Context 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 48 del archivo Data\+Base\+Connection\+Extension.\+java.
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_adbba54504b8c15c35363b8c6ee62772f}\label{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_adbba54504b8c15c35363b8c6ee62772f}} 
+\index{com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}!DRIVER@{DRIVER}}
+\index{DRIVER@{DRIVER}!com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}}
+\subsubsection{\texorpdfstring{DRIVER}{DRIVER}}
+{\footnotesize\ttfamily final String com.\+ruralhousejsf.\+extension.\+Data\+Base\+Connection\+Extension.\+D\+R\+I\+V\+ER = \char`\"{}com.\+mysql.\+jdbc.\+Driver\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 30 del archivo Data\+Base\+Connection\+Extension.\+java.
+
+\mbox{\Hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_a936421171342cb936e683bceb8e819e8}\label{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_a936421171342cb936e683bceb8e819e8}} 
+\index{com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}!LOGGER@{LOGGER}}
+\index{LOGGER@{LOGGER}!com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}}
+\subsubsection{\texorpdfstring{LOGGER}{LOGGER}}
+{\footnotesize\ttfamily final Logger com.\+ruralhousejsf.\+extension.\+Data\+Base\+Connection\+Extension.\+L\+O\+G\+G\+ER = \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1logger_1_1_console_logger_a520321643663e37d95761134a35505cd}{Console\+Logger.\+create\+Logger}}(Data\+Base\+Connection\+Extension.\+class)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 28 del archivo Data\+Base\+Connection\+Extension.\+java.
+
+\mbox{\Hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_a8b37073a138c653895098f4a0c0f661f}\label{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_a8b37073a138c653895098f4a0c0f661f}} 
+\index{com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}!PASSWORD@{PASSWORD}}
+\index{PASSWORD@{PASSWORD}!com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}}
+\subsubsection{\texorpdfstring{PASSWORD}{PASSWORD}}
+{\footnotesize\ttfamily final String com.\+ruralhousejsf.\+extension.\+Data\+Base\+Connection\+Extension.\+P\+A\+S\+S\+W\+O\+RD = \char`\"{}root\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 33 del archivo Data\+Base\+Connection\+Extension.\+java.
+
+\mbox{\Hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_aec89224948925eb2f40d169ba4dc00a9}\label{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_aec89224948925eb2f40d169ba4dc00a9}} 
+\index{com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}!URL@{URL}}
+\index{URL@{URL}!com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}}
+\subsubsection{\texorpdfstring{URL}{URL}}
+{\footnotesize\ttfamily final String com.\+ruralhousejsf.\+extension.\+Data\+Base\+Connection\+Extension.\+U\+RL = \char`\"{}jdbc\+:mysql\+://localhost/Hibernate\+Rural\+House\+J\+SF?use\+S\+SL=false\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo Data\+Base\+Connection\+Extension.\+java.
+
+\mbox{\Hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_a87696d6ea7d62869301b08d9264182b0}\label{classcom_1_1ruralhousejsf_1_1extension_1_1_data_base_connection_extension_a87696d6ea7d62869301b08d9264182b0}} 
+\index{com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}!USER@{USER}}
+\index{USER@{USER}!com.ruralhousejsf.extension.DataBaseConnectionExtension@{com.ruralhousejsf.extension.DataBaseConnectionExtension}}
+\subsubsection{\texorpdfstring{USER}{USER}}
+{\footnotesize\ttfamily final String com.\+ruralhousejsf.\+extension.\+Data\+Base\+Connection\+Extension.\+U\+S\+ER = \char`\"{}root\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 32 del archivo Data\+Base\+Connection\+Extension.\+java.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Michel/git/\+W\+S\+Rural\+House-\/\+J\+S\+F-\/maven-\//src/test/java/com/ruralhousejsf/extension/\mbox{\hyperlink{_data_base_connection_extension_8java}{Data\+Base\+Connection\+Extension.\+java}}\end{DoxyCompactItemize}

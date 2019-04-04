@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WSRuralHouse-JSF: Fichero Fuente C:/Users/Michel/git/WSRuralHouse-JSF-maven-/src/test/java/com/ruralhousejsf/extension/TimingExtension.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WSRuralHouse-JSF
+   &#160;<span id="projectnumber">0.3</span>
+   </div>
+   <div id="projectbrief">Proyecto de la asignatura IS1 y extendido durante IS2. Es una aplicación de escritorio sobre reservas para casas rurales, durante IS2 se traspasó a web.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li><li class="navelem"><a class="el" href="dir_97debbc39e3b917fca663601bb2b0709.html">java</a></li><li class="navelem"><a class="el" href="dir_23faaf0c5c81a0660a411c4a306acbb5.html">com</a></li><li class="navelem"><a class="el" href="dir_f99cfcd4681d99dab09df04f2118c1ab.html">ruralhousejsf</a></li><li class="navelem"><a class="el" href="dir_6841c081ff6a892315863deffa606286.html">extension</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">TimingExtension.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_timing_extension_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>com.ruralhousejsf.extension;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.lang.reflect.Method;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">import</span> org.apache.log4j.Logger;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">import</span> org.junit.jupiter.api.extension.AfterTestExecutionCallback;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">import</span> org.junit.jupiter.api.extension.BeforeTestExecutionCallback;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">import</span> org.junit.jupiter.api.extension.ExtensionContext;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">import</span> org.junit.jupiter.api.extension.ExtensionContext.Namespace;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">import</span> org.junit.jupiter.api.extension.ExtensionContext.Store;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">import</span> <a class="code" href="namespacecom.html">com</a>.<a class="code" href="namespacecom_1_1ruralhousejsf.html">ruralhousejsf</a>.<a class="code" href="namespacecom_1_1ruralhousejsf_1_1logger.html">logger</a>.<a class="code" href="classcom_1_1ruralhousejsf_1_1logger_1_1_console_logger.html">ConsoleLogger</a>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension.html">   26</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension.html">TimingExtension</a> <span class="keyword">implements</span> BeforeTestExecutionCallback, AfterTestExecutionCallback {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger LOGGER = <a class="code" href="classcom_1_1ruralhousejsf_1_1logger_1_1_console_logger.html">ConsoleLogger</a>.<a class="code" href="classcom_1_1ruralhousejsf_1_1logger_1_1_console_logger.html#a520321643663e37d95761134a35505cd">createLogger</a>(<a class="code" href="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension.html">TimingExtension</a>.class);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String START_TIME = <span class="stringliteral">&quot;start time&quot;</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    @Override</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension.html#ad19d0a2513bd9041f9263c1d9536ed6c">   45</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension.html#ad19d0a2513bd9041f9263c1d9536ed6c">beforeTestExecution</a>(ExtensionContext context) <span class="keywordflow">throws</span> Exception {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        getStore(context).put(START_TIME, System.currentTimeMillis());</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    @Override</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension.html#a300725ce5f0290e9878185e05d84c019">   62</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension.html#a300725ce5f0290e9878185e05d84c019">afterTestExecution</a>(ExtensionContext context) <span class="keywordflow">throws</span> Exception {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        Method testMethod = context.getRequiredTestMethod();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">long</span> startTime = getStore(context).remove(START_TIME, <span class="keywordtype">long</span>.<span class="keyword">class</span>);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">long</span> duration = System.currentTimeMillis() - startTime;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        LOGGER.info(String.format(<span class="stringliteral">&quot;Method [%s] took %s ms.&quot;</span>, testMethod.getName(), duration));</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">private</span> Store getStore(ExtensionContext context) {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> context.getStore(Namespace.create(getClass(), context.getRequiredTestMethod()));</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="ttc" id="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_html_a300725ce5f0290e9878185e05d84c019"><div class="ttname"><a href="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension.html#a300725ce5f0290e9878185e05d84c019">com.ruralhousejsf.extension.TimingExtension.afterTestExecution</a></div><div class="ttdeci">void afterTestExecution(ExtensionContext context)</div><div class="ttdef"><b>Definition:</b> <a href="_timing_extension_8java_source.html#l00062">TimingExtension.java:62</a></div></div>
+<div class="ttc" id="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_html_ad19d0a2513bd9041f9263c1d9536ed6c"><div class="ttname"><a href="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension.html#ad19d0a2513bd9041f9263c1d9536ed6c">com.ruralhousejsf.extension.TimingExtension.beforeTestExecution</a></div><div class="ttdeci">void beforeTestExecution(ExtensionContext context)</div><div class="ttdef"><b>Definition:</b> <a href="_timing_extension_8java_source.html#l00045">TimingExtension.java:45</a></div></div>
+<div class="ttc" id="classcom_1_1ruralhousejsf_1_1logger_1_1_console_logger_html"><div class="ttname"><a href="classcom_1_1ruralhousejsf_1_1logger_1_1_console_logger.html">com.ruralhousejsf.logger.ConsoleLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="_console_logger_8java_source.html#l00010">ConsoleLogger.java:10</a></div></div>
+<div class="ttc" id="namespacecom_html"><div class="ttname"><a href="namespacecom.html">com</a></div></div>
+<div class="ttc" id="namespacecom_1_1ruralhousejsf_1_1logger_html"><div class="ttname"><a href="namespacecom_1_1ruralhousejsf_1_1logger.html">com.ruralhousejsf.logger</a></div><div class="ttdef"><b>Definition:</b> <a href="_console_logger_8java_source.html#l00001">ConsoleLogger.java:1</a></div></div>
+<div class="ttc" id="namespacecom_1_1ruralhousejsf_html"><div class="ttname"><a href="namespacecom_1_1ruralhousejsf.html">com.ruralhousejsf</a></div></div>
+<div class="ttc" id="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_html"><div class="ttname"><a href="classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension.html">com.ruralhousejsf.extension.TimingExtension</a></div><div class="ttdef"><b>Definition:</b> <a href="_timing_extension_8java_source.html#l00026">TimingExtension.java:26</a></div></div>
+<div class="ttc" id="classcom_1_1ruralhousejsf_1_1logger_1_1_console_logger_html_a520321643663e37d95761134a35505cd"><div class="ttname"><a href="classcom_1_1ruralhousejsf_1_1logger_1_1_console_logger.html#a520321643663e37d95761134a35505cd">com.ruralhousejsf.logger.ConsoleLogger.createLogger</a></div><div class="ttdeci">static Logger createLogger()</div><div class="ttdef"><b>Definition:</b> <a href="_console_logger_8java_source.html#l00027">ConsoleLogger.java:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>
