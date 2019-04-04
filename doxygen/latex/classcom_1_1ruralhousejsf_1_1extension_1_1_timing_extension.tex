@@ -1,0 +1,109 @@
+\hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension}{}\section{Referencia de la Clase com.\+ruralhousejsf.\+extension.\+Timing\+Extension}
+\label{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension}\index{com.ruralhousejsf.extension.TimingExtension@{com.ruralhousejsf.extension.TimingExtension}}
+Diagrama de herencias de com.\+ruralhousejsf.\+extension.\+Timing\+Extension\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_ad19d0a2513bd9041f9263c1d9536ed6c}{before\+Test\+Execution}} (Extension\+Context context)  throws Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_a300725ce5f0290e9878185e05d84c019}{after\+Test\+Execution}} (Extension\+Context context)  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+The \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension}{Timing\+Extension}} class implements the \mbox{\hyperlink{}{Before\+Test\+Execution\+Callback}} and the \mbox{\hyperlink{}{After\+Test\+Execution\+Callback}} interfaces, which overrides the 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_ad19d0a2513bd9041f9263c1d9536ed6c}{beforeTestExecution}} }
+\end{DoxyCode}
+ method and the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_a300725ce5f0290e9878185e05d84c019}{afterTestExecution}} }
+\end{DoxyCode}
+ method. 
+
+An Extension can be registered {\ttfamily declaratively} via \mbox{\hyperlink{}{org.\+junit.\+jupiter.\+api.\+extension.\+Extend\+With}}, {\ttfamily programmatically} via \{@linkplain org.\+junit.\+jupiter.\+api.\+extension.\+Register\+Extension @\+Register\+Extension\}, or {\ttfamily automatically} via the \{@linkplain java.\+util.\+Service\+Loader Service\+Loader\} mechanism.
+
+\begin{DoxySeeAlso}{Ver también}
+\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_ad19d0a2513bd9041f9263c1d9536ed6c}{before\+Test\+Execution(\+Extension\+Context)}} 
+
+\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_a300725ce5f0290e9878185e05d84c019}{after\+Test\+Execution(\+Extension\+Context)}} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 26 del archivo Timing\+Extension.\+java.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_a300725ce5f0290e9878185e05d84c019}\label{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_a300725ce5f0290e9878185e05d84c019}} 
+\index{com.ruralhousejsf.extension.TimingExtension@{com.ruralhousejsf.extension.TimingExtension}!afterTestExecution@{afterTestExecution}}
+\index{afterTestExecution@{afterTestExecution}!com.ruralhousejsf.extension.TimingExtension@{com.ruralhousejsf.extension.TimingExtension}}
+\subsubsection{\texorpdfstring{afterTestExecution()}{afterTestExecution()}}
+{\footnotesize\ttfamily void com.\+ruralhousejsf.\+extension.\+Timing\+Extension.\+after\+Test\+Execution (\begin{DoxyParamCaption}\item[{Extension\+Context}]{context }\end{DoxyParamCaption}) throws Exception}
+
+This callback is invoked {\ttfamily immediately after} each test has been executed, and its only purpose is to stop the timer and to log out the test elapsed time. 
+
+This method will retrieve the stored value under the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{START\_TIME }
+\end{DoxyCode}
+
+
+key and calculate the elapsed time.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em context} & the current extension context, never
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keyword}{null} }
+\end{DoxyCode}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+After\+Test\+Execution\+Callback\+::after\+Test\+Execution(\+Extension\+Context) 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 62 del archivo Timing\+Extension.\+java.
+
+\mbox{\Hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_ad19d0a2513bd9041f9263c1d9536ed6c}\label{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_ad19d0a2513bd9041f9263c1d9536ed6c}} 
+\index{com.ruralhousejsf.extension.TimingExtension@{com.ruralhousejsf.extension.TimingExtension}!beforeTestExecution@{beforeTestExecution}}
+\index{beforeTestExecution@{beforeTestExecution}!com.ruralhousejsf.extension.TimingExtension@{com.ruralhousejsf.extension.TimingExtension}}
+\subsubsection{\texorpdfstring{beforeTestExecution()}{beforeTestExecution()}}
+{\footnotesize\ttfamily void com.\+ruralhousejsf.\+extension.\+Timing\+Extension.\+before\+Test\+Execution (\begin{DoxyParamCaption}\item[{Extension\+Context}]{context }\end{DoxyParamCaption}) throws Exception}
+
+This callback is invoked {\ttfamily immediately after} each test has been executed, and its only purpose is to start the test timer to measure the elapsed time. 
+
+This will store the current system time value for later retrieval under the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{START\_TIME }
+\end{DoxyCode}
+ key.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em context} & the current extension context, never
+\begin{DoxyCode}{1}
+\DoxyCodeLine{\textcolor{keyword}{null} }
+\end{DoxyCode}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+Before\+Test\+Execution\+Callback\+::before\+Test\+Execution(\+Extension\+Context) 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 45 del archivo Timing\+Extension.\+java.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Michel/git/\+W\+S\+Rural\+House-\/\+J\+S\+F-\/maven-\//src/test/java/com/ruralhousejsf/extension/\mbox{\hyperlink{_timing_extension_8java}{Timing\+Extension.\+java}}\end{DoxyCompactItemize}
