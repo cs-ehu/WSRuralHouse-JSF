@@ -80,6 +80,9 @@ $(function() {
 <div class="title">Referencia de la Clase com.ruralhousejsf.HibernateDataAccessTest</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class defines test to guarantee a correct and an expected result of the methods and classes that access the database.  
+ <a href="../../d6/d70/classcom_1_1ruralhousejsf_1_1_hibernate_data_access_test.html#details">Más...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Clases</h2></td></tr>
@@ -126,15 +129,19 @@ Atributos Estáticos del 'package'</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Métodos privados</h2></td></tr>
 <tr class="memitem:a971c94d6c41317c2cc8de024153f0dc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/de3/classcom_1_1ruralhousejsf_1_1domain_1_1_client.html">Client</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d70/classcom_1_1ruralhousejsf_1_1_hibernate_data_access_test.html#a971c94d6c41317c2cc8de024153f0dc9">createTestClient</a> (String username, String password)</td></tr>
+<tr class="memdesc:a971c94d6c41317c2cc8de024153f0dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and stores a client to be used in the tests.  <a href="#a971c94d6c41317c2cc8de024153f0dc9">Más...</a><br /></td></tr>
 <tr class="separator:a971c94d6c41317c2cc8de024153f0dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb47ff6c8ba0fc7e7327407a8c937c4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/db8/classcom_1_1ruralhousejsf_1_1domain_1_1_offer.html">Offer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d70/classcom_1_1ruralhousejsf_1_1_hibernate_data_access_test.html#adb47ff6c8ba0fc7e7327407a8c937c4a">createTestOffer</a> (<a class="el" href="../../dd/d77/classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house.html">RuralHouse</a> ruralHouse, LocalDate offerStartDate, LocalDate offerEndDate, double offerPrice)  throws BadDatesException </td></tr>
+<tr class="memdesc:adb47ff6c8ba0fc7e7327407a8c937c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and stores an offer to be used in the tests.  <a href="#adb47ff6c8ba0fc7e7327407a8c937c4a">Más...</a><br /></td></tr>
 <tr class="separator:adb47ff6c8ba0fc7e7327407a8c937c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a455296993315fc3b33f1c5806622ad32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d77/classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house.html">RuralHouse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d70/classcom_1_1ruralhousejsf_1_1_hibernate_data_access_test.html#a455296993315fc3b33f1c5806622ad32">createTestRuralHouse</a> (String description, String city)</td></tr>
+<tr class="memdesc:a455296993315fc3b33f1c5806622ad32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and stores a rural house to be used in the tests.  <a href="#a455296993315fc3b33f1c5806622ad32">Más...</a><br /></td></tr>
 <tr class="separator:a455296993315fc3b33f1c5806622ad32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Métodos privados estáticos</h2></td></tr>
 <tr class="memitem:a71fef61bb66234d92d84ddd795de842a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d70/classcom_1_1ruralhousejsf_1_1_hibernate_data_access_test.html#a71fef61bb66234d92d84ddd795de842a">removeTestData</a> ()</td></tr>
+<tr class="memdesc:a71fef61bb66234d92d84ddd795de842a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove any test data added in the database.  <a href="#a71fef61bb66234d92d84ddd795de842a">Más...</a><br /></td></tr>
 <tr class="separator:a71fef61bb66234d92d84ddd795de842a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
@@ -257,7 +264,9 @@ Métodos privados estáticos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates and stores a client to be used in the tests.<br />
+
+<p>Creates and stores a client to be used in the tests. </p>
+<p><br />
  This method assumes that no</p><div class="fragment"><div class="line"><span class="keyword">null</span> </div></div><!-- fragment --><p> value will not be obtained when creating the client, in that extent, this method will not return a </p><div class="fragment"><div class="line"><span class="keyword">null</span> </div></div><!-- fragment --><p> value. </p>
 <p>This value is added to a list for the later removal and to avoid to fill the database with invalid data.</p>
 <dl class="params"><dt>Parámetros</dt><dd>
@@ -319,7 +328,9 @@ Métodos privados estáticos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates and stores an offer to be used in the tests.<br />
+
+<p>Creates and stores an offer to be used in the tests. </p>
+<p><br />
  This method assumes that no</p><div class="fragment"><div class="line"><span class="keyword">null</span> </div></div><!-- fragment --><p> value will not be obtained when creating the client, in that extent, this method will not return a </p><div class="fragment"><div class="line"><span class="keyword">null</span> </div></div><!-- fragment --><p> value. </p>
 <p>This value is added to a list for the later removal and to avoid to fill the database with invalid data.</p>
 <dl class="params"><dt>Parámetros</dt><dd>
@@ -377,7 +388,9 @@ Métodos privados estáticos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates and stores a rural house to be used in the tests.<br />
+
+<p>Creates and stores a rural house to be used in the tests. </p>
+<p><br />
  This method assumes that no</p><div class="fragment"><div class="line"><span class="keyword">null</span> </div></div><!-- fragment --><p> value will not be obtained when creating the client, in that extent, this method will not return a </p><div class="fragment"><div class="line"><span class="keyword">null</span> </div></div><!-- fragment --><p> value. </p>
 <p>This value is added to a list for the later removal and to avoid to fill the database with invalid data.</p>
 <dl class="params"><dt>Parámetros</dt><dd>
@@ -416,7 +429,9 @@ Métodos privados estáticos</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Remove any test data added in the database.<br />
+
+<p>Remove any test data added in the database. </p>
+<p><br />
  This method should be called at least once in the annotated method with "@code @afterAll @endcode ". </p>
 
 <p class="definition">Definición en la línea <a class="el" href="../../d8/d8b/_hibernate_data_access_test_8java_source.html#l00095">95</a> del archivo <a class="el" href="../../d8/d8b/_hibernate_data_access_test_8java_source.html">HibernateDataAccessTest.java</a>.</p>

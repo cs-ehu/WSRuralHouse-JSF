@@ -1,5 +1,10 @@
 \hypertarget{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension}{}\section{Referencia de la Clase com.\+ruralhousejsf.\+extension.\+Timing\+Extension}
 \label{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension}\index{com.ruralhousejsf.extension.TimingExtension@{com.ruralhousejsf.extension.TimingExtension}}
+
+
+The \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension}{Timing\+Extension}} class implements the \mbox{\hyperlink{}{Before\+Test\+Execution\+Callback}} and the \mbox{\hyperlink{}{After\+Test\+Execution\+Callback}} interfaces, which overrides the.  
+
+
 Diagrama de herencias de com.\+ruralhousejsf.\+extension.\+Timing\+Extension\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,14 +15,14 @@ Diagrama de herencias de com.\+ruralhousejsf.\+extension.\+Timing\+Extension\beg
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_ad19d0a2513bd9041f9263c1d9536ed6c}{before\+Test\+Execution}} (Extension\+Context context)  throws Exception 
-\item 
+\begin{DoxyCompactList}\small\item\em This callback is invoked {\ttfamily immediately after} each test has been executed, and its only purpose is to start the test timer to measure the elapsed time. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_a300725ce5f0290e9878185e05d84c019}{after\+Test\+Execution}} (Extension\+Context context)  throws Exception 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This callback is invoked {\ttfamily immediately after} each test has been executed, and its only purpose is to stop the timer and to log out the test elapsed time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Métodos privados}
 \begin{DoxyCompactItemize}
 \item 
 Store \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_a489c3097fd687a25391189f3fec56fa8}{get\+Store}} (Extension\+Context context)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atributos privados estáticos}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,7 +33,9 @@ static final String \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_
 
 
 \subsection{Descripción detallada}
-The \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension}{Timing\+Extension}} class implements the \mbox{\hyperlink{}{Before\+Test\+Execution\+Callback}} and the \mbox{\hyperlink{}{After\+Test\+Execution\+Callback}} interfaces, which overrides the 
+The \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension}{Timing\+Extension}} class implements the \mbox{\hyperlink{}{Before\+Test\+Execution\+Callback}} and the \mbox{\hyperlink{}{After\+Test\+Execution\+Callback}} interfaces, which overrides the. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1extension_1_1_timing_extension_ad19d0a2513bd9041f9263c1d9536ed6c}{beforeTestExecution}} }
 \end{DoxyCode}
@@ -57,6 +64,8 @@ Definición en la línea 26 del archivo Timing\+Extension.\+java.
 \index{afterTestExecution@{afterTestExecution}!com.ruralhousejsf.extension.TimingExtension@{com.ruralhousejsf.extension.TimingExtension}}
 \subsubsection{\texorpdfstring{afterTestExecution()}{afterTestExecution()}}
 {\footnotesize\ttfamily void com.\+ruralhousejsf.\+extension.\+Timing\+Extension.\+after\+Test\+Execution (\begin{DoxyParamCaption}\item[{Extension\+Context}]{context }\end{DoxyParamCaption}) throws Exception}
+
+
 
 This callback is invoked {\ttfamily immediately after} each test has been executed, and its only purpose is to stop the timer and to log out the test elapsed time. 
 
@@ -90,6 +99,8 @@ Definición en la línea 62 del archivo Timing\+Extension.\+java.
 \subsubsection{\texorpdfstring{beforeTestExecution()}{beforeTestExecution()}}
 {\footnotesize\ttfamily void com.\+ruralhousejsf.\+extension.\+Timing\+Extension.\+before\+Test\+Execution (\begin{DoxyParamCaption}\item[{Extension\+Context}]{context }\end{DoxyParamCaption}) throws Exception}
 
+
+
 This callback is invoked {\ttfamily immediately after} each test has been executed, and its only purpose is to start the test timer to measure the elapsed time. 
 
 This will store the current system time value for later retrieval under the
@@ -120,7 +131,11 @@ Definición en la línea 45 del archivo Timing\+Extension.\+java.
 \subsubsection{\texorpdfstring{getStore()}{getStore()}}
 {\footnotesize\ttfamily Store com.\+ruralhousejsf.\+extension.\+Timing\+Extension.\+get\+Store (\begin{DoxyParamCaption}\item[{Extension\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Returns the
+
+
+Returns the. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{Store }
 \end{DoxyCode}

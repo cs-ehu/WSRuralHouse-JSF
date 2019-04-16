@@ -10,31 +10,31 @@ Diagrama de herencias de com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+A
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_a181eb91e600e57fe36301128022f535d}{truncate\+DB}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Method used to truncate the data base. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_acab426a4933f3510c317816c136cec0b}{initialize\+DB}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Method used to initialize the database. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}} \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_a4c8bc4e3b076f4fc75efb878cc2c1c21}{create\+Rural\+House}} (String description, String city)
-\item 
+\begin{DoxyCompactList}\small\item\em Creates and stores in the database a. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_offer}{Offer}} \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_a0fe06262f78319a1fd4c2fd4e9534db8}{create\+Offer}} (\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}} rural\+House, Local\+Date start\+Date, Local\+Date end\+Date, double price)  throws Bad\+Dates\+Exception
-\item 
+\begin{DoxyCompactList}\small\item\em Creates and stores in the database an. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_offer}{Offer}} \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_a31f9cb8a3c8f0b42dee19b03f052cd62}{create\+Offer}} (\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}} rural\+House, Date start\+Date, Date end\+Date, double price)  throws Bad\+Dates\+Exception
-\item 
+\begin{DoxyCompactList}\small\item\em Creates and stores in the database an. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_client}{Client}} \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_a4671ad8ff75ef8a9195974dbdcd95e7f}{create\+Client}} (String username, String password)
-\item 
+\begin{DoxyCompactList}\small\item\em Creates and stores in the database a. \end{DoxyCompactList}\item 
 List$<$ \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}} $>$ \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_a1cdfce6d8d91e481887b364000fbf6d0}{get\+All\+Rural\+Houses}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Obtains all rural houses stored in the database. \end{DoxyCompactList}\item 
 List$<$ \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_offer}{Offer}} $>$ \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_a731ab9e6ef26732d453046c9630c677b}{get\+Offers}} (\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}} rural\+House, Local\+Date start\+Date, Local\+Date end\+Date)  throws Bad\+Dates\+Exception
-\item 
+\begin{DoxyCompactList}\small\item\em Obtains all offers of a given. \end{DoxyCompactList}\item 
 List$<$ \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_offer}{Offer}} $>$ \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_a2cc9a4e0968b6fde1773f03f3d1ea33c}{get\+Offers}} (\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}} rural\+House, Date start\+Date, Date end\+Date)  throws Bad\+Dates\+Exception
-\item 
+\begin{DoxyCompactList}\small\item\em Obtains all offers of a given. \end{DoxyCompactList}\item 
 Optional$<$ \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_client}{Client}} $>$ \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_abf581529aefd317dffd1d2ca0906c3ac}{get\+Client}} (String username, String password)
-\item 
+\begin{DoxyCompactList}\small\item\em Obtains a. \end{DoxyCompactList}\item 
 public$<$ T extends Serializable, U extends Serializable $>$ Optional$<$ T $>$ \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_a59446f9ebfa6acfa2315debdca84d360}{get}} (Class$<$ T $>$ cls, U key)
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the persistent instance of the given entity class with the given key. \end{DoxyCompactList}\item 
 public$<$ T extends Serializable, U extends Serializable $>$ boolean \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_ac4fef50cac8142bfd12685d7fe48d926}{exists}} (Class$<$ T $>$ cls, U key)
-\item 
+\begin{DoxyCompactList}\small\item\em Check if exists the persistent instance with the given key. \end{DoxyCompactList}\item 
 public$<$ T extends Serializable, U extends Serializable $>$ void \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_interface_a887957b637255d48878d157ee414027a}{delete}} (Class$<$ T $>$ cls, U key)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Delete the persistent instance with the given id. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
@@ -51,7 +51,11 @@ Definición en la línea 14 del archivo Hibernate\+Data\+Access\+Interface.\+jav
 \subsubsection{\texorpdfstring{createClient()}{createClient()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_client}{Client}} com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+create\+Client (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})}
 
-Creates and stores in the database a
+
+
+Creates and stores in the database a. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{Client }
 \end{DoxyCode}
@@ -84,7 +88,11 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{createOffer()}{createOffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_offer}{Offer}} com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+create\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}}}]{rural\+House,  }\item[{Local\+Date}]{start\+Date,  }\item[{Local\+Date}]{end\+Date,  }\item[{double}]{price }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1exceptions_1_1_bad_dates_exception}{Bad\+Dates\+Exception}}}
 
-Creates and stores in the database an
+
+
+Creates and stores in the database an. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{Offer }
 \end{DoxyCode}
@@ -136,7 +144,11 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{createOffer()}{createOffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_offer}{Offer}} com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+create\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}}}]{rural\+House,  }\item[{Date}]{start\+Date,  }\item[{Date}]{end\+Date,  }\item[{double}]{price }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1exceptions_1_1_bad_dates_exception}{Bad\+Dates\+Exception}}}
 
-Creates and stores in the database an
+
+
+Creates and stores in the database an. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{Offer }
 \end{DoxyCode}
@@ -188,7 +200,11 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{createRuralHouse()}{createRuralHouse()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}} com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+create\+Rural\+House (\begin{DoxyParamCaption}\item[{String}]{description,  }\item[{String}]{city }\end{DoxyParamCaption})}
 
-Creates and stores in the database a
+
+
+Creates and stores in the database a. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{RuralHouse }
 \end{DoxyCode}
@@ -221,7 +237,9 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{delete()}{delete()}}
 {\footnotesize\ttfamily public$<$T extends Serializable, U extends Serializable$>$ void com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+delete (\begin{DoxyParamCaption}\item[{Class$<$ T $>$}]{cls,  }\item[{U}]{key }\end{DoxyParamCaption})}
 
-Delete the persistent instance with the given id
+
+
+Delete the persistent instance with the given id. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -244,7 +262,9 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{exists()}{exists()}}
 {\footnotesize\ttfamily public$<$T extends Serializable, U extends Serializable$>$ boolean com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+exists (\begin{DoxyParamCaption}\item[{Class$<$ T $>$}]{cls,  }\item[{U}]{key }\end{DoxyParamCaption})}
 
-Check if exists the persistent instance with the given key
+
+
+Check if exists the persistent instance with the given key. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -270,7 +290,9 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{get()}{get()}}
 {\footnotesize\ttfamily public$<$T extends Serializable, U extends Serializable$>$ Optional$<$T$>$ com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+get (\begin{DoxyParamCaption}\item[{Class$<$ T $>$}]{cls,  }\item[{U}]{key }\end{DoxyParamCaption})}
 
-Returns the persistent instance of the given entity class with the given key
+
+
+Returns the persistent instance of the given entity class with the given key. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -296,7 +318,9 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{getAllRuralHouses()}{getAllRuralHouses()}}
 {\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}}$>$ com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+get\+All\+Rural\+Houses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Obtains all rural houses stored in the database.
+
+
+Obtains all rural houses stored in the database. 
 
 \begin{DoxyReturn}{Devuelve}
 list of rural houses
@@ -314,7 +338,11 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{getClient()}{getClient()}}
 {\footnotesize\ttfamily Optional$<$\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_client}{Client}}$>$ com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+get\+Client (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})}
 
-Obtains a
+
+
+Obtains a. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{Client }
 \end{DoxyCode}
@@ -345,7 +373,11 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{getOffers()}{getOffers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_offer}{Offer}}$>$ com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+get\+Offers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}}}]{rural\+House,  }\item[{Local\+Date}]{start\+Date,  }\item[{Local\+Date}]{end\+Date }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1exceptions_1_1_bad_dates_exception}{Bad\+Dates\+Exception}}}
 
-Obtains all offers of a given
+
+
+Obtains all offers of a given. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{RuralHouse }
 \end{DoxyCode}
@@ -383,7 +415,11 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{getOffers()}{getOffers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily List$<$\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_offer}{Offer}}$>$ com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+get\+Offers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1_rural_house}{Rural\+House}}}]{rural\+House,  }\item[{Date}]{start\+Date,  }\item[{Date}]{end\+Date }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1exceptions_1_1_bad_dates_exception}{Bad\+Dates\+Exception}}}
 
-Obtains all offers of a given
+
+
+Obtains all offers of a given. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{RuralHouse }
 \end{DoxyCode}
@@ -421,7 +457,11 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{initializeDB()}{initializeDB()}}
 {\footnotesize\ttfamily void com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+initialize\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Method used to initialize the database 
+
+
+Method used to initialize the database. 
+
+
 
 Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_af6f8016d5e185e86519871913781fe73}{com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access}}.
 
@@ -431,7 +471,11 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hi
 \subsubsection{\texorpdfstring{truncateDB()}{truncateDB()}}
 {\footnotesize\ttfamily void com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access\+Interface.\+truncate\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
 Method used to truncate the data base. 
+
+
 
 Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1data_access_1_1_hibernate_data_access_a81a5e60db58acfc1a3c1de2f014813d5}{com.\+ruralhousejsf.\+data\+Access.\+Hibernate\+Data\+Access}}.
 

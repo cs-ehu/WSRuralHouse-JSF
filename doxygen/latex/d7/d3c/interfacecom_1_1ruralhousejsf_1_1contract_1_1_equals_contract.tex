@@ -1,5 +1,10 @@
 \hypertarget{interfacecom_1_1ruralhousejsf_1_1contract_1_1_equals_contract}{}\section{Referencia de la plantilla de la Interfaz com.\+ruralhousejsf.\+contract.\+Equals\+Contract$<$ T $>$}
 \label{interfacecom_1_1ruralhousejsf_1_1contract_1_1_equals_contract}\index{com.ruralhousejsf.contract.EqualsContract$<$ T $>$@{com.ruralhousejsf.contract.EqualsContract$<$ T $>$}}
+
+
+This interface defines tests to verify that the objects implements correctly the.  
+
+
 Diagrama de herencias de com.\+ruralhousejsf.\+contract.\+Equals\+Contract$<$ T $>$\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,17 +15,19 @@ Diagrama de herencias de com.\+ruralhousejsf.\+contract.\+Equals\+Contract$<$ T 
 \begin{DoxyCompactItemize}
 \item 
 T \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1contract_1_1_equals_contract_a65840509b57f6b89e42e2abf1978aa01}{create\+Not\+Equal\+Value}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Creates and returns a non equal value to use in the equality tests. \end{DoxyCompactList}\item 
 default void \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1contract_1_1_equals_contract_a5daf9e73e1147c8765c0fcf3d3dddbb0}{equal\+Value\+Itself}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Compares the created value to itself to test that the equality holds. \end{DoxyCompactList}\item 
 default void \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1contract_1_1_equals_contract_adda6a50dc1babeb3783fd92a09aac788}{not\+Equal\+Null\+Value}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Compares the created value to a. \end{DoxyCompactList}\item 
 default void \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1contract_1_1_equals_contract_acaa5c1c071bf63a3e629977c73131fc8}{not\+Equal\+Different\+Value}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Compares the created value to a different value to test that the equality does not hold. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
-This interface defines tests to verify that the objects implements correctly the
+This interface defines tests to verify that the objects implements correctly the. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{equals }
 \end{DoxyCode}
@@ -63,7 +70,11 @@ Definición en la línea 28 del archivo Equals\+Contract.\+java.
 \subsubsection{\texorpdfstring{createNotEqualValue()}{createNotEqualValue()}}
 {\footnotesize\ttfamily T \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1contract_1_1_equals_contract}{com.\+ruralhousejsf.\+contract.\+Equals\+Contract}}$<$ T $>$.create\+Not\+Equal\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Creates and returns a non equal value to use in the equality tests.~\newline
+
+
+Creates and returns a non equal value to use in the equality tests. 
+
+~\newline
  This method should return a value not equal to the returned by \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1contract_1_1_testable_ae4546a381488faaba1ef7c0f8688de9c}{Testable\#create\+Value}} for its correct execution.
 
 \begin{DoxyReturn}{Devuelve}
@@ -79,7 +90,11 @@ Implementado en \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1_equals_test_1_1_o
 \subsubsection{\texorpdfstring{equalValueItself()}{equalValueItself()}}
 {\footnotesize\ttfamily default void \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1contract_1_1_equals_contract}{com.\+ruralhousejsf.\+contract.\+Equals\+Contract}}$<$ T $>$.equal\+Value\+Itself (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
 Compares the created value to itself to test that the equality holds. 
+
+
 
 Definición en la línea 44 del archivo Equals\+Contract.\+java.
 
@@ -89,7 +104,11 @@ Definición en la línea 44 del archivo Equals\+Contract.\+java.
 \subsubsection{\texorpdfstring{notEqualDifferentValue()}{notEqualDifferentValue()}}
 {\footnotesize\ttfamily default void \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1contract_1_1_equals_contract}{com.\+ruralhousejsf.\+contract.\+Equals\+Contract}}$<$ T $>$.not\+Equal\+Different\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
 Compares the created value to a different value to test that the equality does not hold. 
+
+
 
 Definición en la línea 66 del archivo Equals\+Contract.\+java.
 
@@ -99,7 +118,11 @@ Definición en la línea 66 del archivo Equals\+Contract.\+java.
 \subsubsection{\texorpdfstring{notEqualNullValue()}{notEqualNullValue()}}
 {\footnotesize\ttfamily default void \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1contract_1_1_equals_contract}{com.\+ruralhousejsf.\+contract.\+Equals\+Contract}}$<$ T $>$.not\+Equal\+Null\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Compares the created value to a
+
+
+Compares the created value to a. 
+
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{keyword}{null} }
 \end{DoxyCode}

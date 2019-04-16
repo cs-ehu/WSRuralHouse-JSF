@@ -115,8 +115,10 @@ Métodos públicos</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Métodos privados</h2></td></tr>
 <tr class="memitem:aeb8db23c0310aa0fd0d9bcb2da10fa74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/classcom_1_1ruralhousejsf_1_1domain_1_1observer_1_1_observed_value.html#aeb8db23c0310aa0fd0d9bcb2da10fa74">writeObject</a> (ObjectOutputStream out)  throws IOException </td></tr>
+<tr class="memdesc:aeb8db23c0310aa0fd0d9bcb2da10fa74"><td class="mdescLeft">&#160;</td><td class="mdescRight">The writeObject method is responsible for writing the state of the object for its particular class so that the corresponding readObject method can restore it.  <a href="#aeb8db23c0310aa0fd0d9bcb2da10fa74">Más...</a><br /></td></tr>
 <tr class="separator:aeb8db23c0310aa0fd0d9bcb2da10fa74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51ae17b2577c4ffc87ccf4abca82ab3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/classcom_1_1ruralhousejsf_1_1domain_1_1observer_1_1_observed_value.html#a51ae17b2577c4ffc87ccf4abca82ab3d">readObject</a> (ObjectInputStream in)  throws IOException, ClassNotFoundException </td></tr>
+<tr class="memdesc:a51ae17b2577c4ffc87ccf4abca82ab3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The readObject method is responsible for reading from the stream and restoring the classes fields.  <a href="#a51ae17b2577c4ffc87ccf4abca82ab3d">Más...</a><br /></td></tr>
 <tr class="separator:a51ae17b2577c4ffc87ccf4abca82ab3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -127,6 +129,7 @@ Atributos privados</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Atributos privados estáticos</h2></td></tr>
 <tr class="memitem:a01052aac89cda6c5f230343d40b54e89"><td class="memItemLeft" align="right" valign="top">static final long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d1d/classcom_1_1ruralhousejsf_1_1domain_1_1observer_1_1_observed_value.html#a01052aac89cda6c5f230343d40b54e89">serialVersionUID</a> = 8159940159964193507L</td></tr>
+<tr class="memdesc:a01052aac89cda6c5f230343d40b54e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-generated serial version ID.  <a href="#a01052aac89cda6c5f230343d40b54e89">Más...</a><br /></td></tr>
 <tr class="separator:a01052aac89cda6c5f230343d40b54e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -242,7 +245,9 @@ Otros miembros heredados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The readObject method is responsible for reading from the stream and restoring the classes fields. It may call in.defaultReadObject to invoke the default mechanism for restoring the object's non-static and non-transient fields. The defaultReadObject method uses information in the stream to assign the fields of the object saved in the stream with the correspondingly named fields in the current object. This handles the case when the class has evolved to add new fields. The method does not need to concern itself with the state belonging to its superclasses or subclasses. State is saved by writing the individual fields to the ObjectOutputStream using the writeObject method or by using the methods for primitive data types supported by DataOutput.</p>
+
+<p>The readObject method is responsible for reading from the stream and restoring the classes fields. </p>
+<p>It may call in.defaultReadObject to invoke the default mechanism for restoring the object's non-static and non-transient fields. The defaultReadObject method uses information in the stream to assign the fields of the object saved in the stream with the correspondingly named fields in the current object. This handles the case when the class has evolved to add new fields. The method does not need to concern itself with the state belonging to its superclasses or subclasses. State is saved by writing the individual fields to the ObjectOutputStream using the writeObject method or by using the methods for primitive data types supported by DataOutput.</p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>the ObjectInputStream that deserializes primitive data and objects previously written using an ObjectOutputStream </td></tr>
@@ -327,7 +332,9 @@ ObjectInputStream </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The writeObject method is responsible for writing the state of the object for its particular class so that the corresponding readObject method can restore it. The default mechanism for saving the Object's fields can be invoked by calling out.defaultWriteObject. The method does not need to concern itself with the state belonging to its superclasses or subclasses. State is saved by writing the individual fields to the ObjectOutputStream using the writeObject method or by using the methods for primitive data types supported by DataOutput.</p>
+
+<p>The writeObject method is responsible for writing the state of the object for its particular class so that the corresponding readObject method can restore it. </p>
+<p>The default mechanism for saving the Object's fields can be invoked by calling out.defaultWriteObject. The method does not need to concern itself with the state belonging to its superclasses or subclasses. State is saved by writing the individual fields to the ObjectOutputStream using the writeObject method or by using the methods for primitive data types supported by DataOutput.</p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">out</td><td>writes primitive data types and graphs of Java objects to an OutputStream </td></tr>
@@ -368,7 +375,8 @@ ObjectOutputStream </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Auto-generated serial version ID </p>
+
+<p>Auto-generated serial version ID. </p>
 
 <p class="definition">Definición en la línea <a class="el" href="../../d6/da6/_observed_value_8java_source.html#l00093">93</a> del archivo <a class="el" href="../../d6/da6/_observed_value_8java_source.html">ObservedValue.java</a>.</p>
 

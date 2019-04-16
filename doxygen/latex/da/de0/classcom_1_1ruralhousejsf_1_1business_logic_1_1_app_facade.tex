@@ -4,19 +4,19 @@
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1business_logic_1_1_application_facade_interface}{Application\+Facade\+Interface}} \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{get\+Impl}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes and returns the application facade instance. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1business_logic_1_1_application_facade_interface}{Application\+Facade\+Interface}} \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_aa4bf7166aae19a2d640fd6ab8a0fff96}{get\+Impl}} (boolean should\+Truncate\+Db)
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes and returns the application facade instance. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1business_logic_1_1_application_facade_interface}{Application\+Facade\+Interface}} \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_aab339d9b44293704c9214aef70c7c704}{get\+Impl}} (boolean should\+Truncate\+Db, boolean should\+Initialize\+Db)
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes and returns the application facade instance. \end{DoxyCompactList}\item 
 static boolean \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a3638d881ea2d917df632a313d9ed9b20}{is\+Truncate\+Enabled}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Return if it is planned to truncate the database in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a98aed1ed8a03c6a92e15121fed4eb452}{truncate}} (boolean \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_ac9cbe77035be5cc1f9bf258c57ca6564}{truncate\+Db}})
-\item 
+\begin{DoxyCompactList}\small\item\em Set to truncate the database data in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}. \end{DoxyCompactList}\item 
 static boolean \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a0486115e3ba238d025e23ec62548b3bc}{is\+Initialize\+Enabled}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Return if it is planned to initialize the database data in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a48252ec119a6bb16f5353df6ec6eff54}{initialize}} (boolean \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a08e1f188faabf8bef71610c49bdd5d84}{initialize\+Db}})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Set to initialize the database data in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atributos públicos estáticos}
 \begin{DoxyCompactItemize}
 \item 
@@ -80,6 +80,8 @@ Definición en la línea 17 del archivo App\+Facade.\+java.
 \subsubsection{\texorpdfstring{getImpl()}{getImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1business_logic_1_1_application_facade_interface}{Application\+Facade\+Interface}} com.\+ruralhousejsf.\+business\+Logic.\+App\+Facade.\+get\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
 Initializes and returns the application facade instance. 
 
 When getting the instance, this will truncate or initialize the database if it is planned to do so.
@@ -102,6 +104,8 @@ Definición en la línea 37 del archivo App\+Facade.\+java.
 \subsubsection{\texorpdfstring{getImpl()}{getImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1business_logic_1_1_application_facade_interface}{Application\+Facade\+Interface}} com.\+ruralhousejsf.\+business\+Logic.\+App\+Facade.\+get\+Impl (\begin{DoxyParamCaption}\item[{boolean}]{should\+Truncate\+Db }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
 Initializes and returns the application facade instance. 
 
 When getting the instance, this will truncate or initialize the database if it is planned to do so.
@@ -120,6 +124,8 @@ Definición en la línea 54 del archivo App\+Facade.\+java.
 \index{getImpl@{getImpl}!com.ruralhousejsf.businessLogic.AppFacade@{com.ruralhousejsf.businessLogic.AppFacade}}
 \subsubsection{\texorpdfstring{getImpl()}{getImpl()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{interfacecom_1_1ruralhousejsf_1_1business_logic_1_1_application_facade_interface}{Application\+Facade\+Interface}} com.\+ruralhousejsf.\+business\+Logic.\+App\+Facade.\+get\+Impl (\begin{DoxyParamCaption}\item[{boolean}]{should\+Truncate\+Db,  }\item[{boolean}]{should\+Initialize\+Db }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
 
 Initializes and returns the application facade instance. 
 
@@ -140,7 +146,9 @@ Definición en la línea 72 del archivo App\+Facade.\+java.
 \subsubsection{\texorpdfstring{initialize()}{initialize()}}
 {\footnotesize\ttfamily static void com.\+ruralhousejsf.\+business\+Logic.\+App\+Facade.\+initialize (\begin{DoxyParamCaption}\item[{boolean}]{initialize\+Db }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Set to initialize the database data in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}.
+
+
+Set to initialize the database data in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -157,7 +165,9 @@ Definición en la línea 116 del archivo App\+Facade.\+java.
 \subsubsection{\texorpdfstring{isInitializeEnabled()}{isInitializeEnabled()}}
 {\footnotesize\ttfamily static boolean com.\+ruralhousejsf.\+business\+Logic.\+App\+Facade.\+is\+Initialize\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Return if it is planned to initialize the database data in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}.
+
+
+Return if it is planned to initialize the database data in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}. 
 
 \begin{DoxyReturn}{Devuelve}
 
@@ -180,7 +190,9 @@ Definición en la línea 107 del archivo App\+Facade.\+java.
 \subsubsection{\texorpdfstring{isTruncateEnabled()}{isTruncateEnabled()}}
 {\footnotesize\ttfamily static boolean com.\+ruralhousejsf.\+business\+Logic.\+App\+Facade.\+is\+Truncate\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Return if it is planned to truncate the database in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}.
+
+
+Return if it is planned to truncate the database in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}. 
 
 \begin{DoxyReturn}{Devuelve}
 
@@ -203,7 +215,9 @@ Definición en la línea 89 del archivo App\+Facade.\+java.
 \subsubsection{\texorpdfstring{truncate()}{truncate()}}
 {\footnotesize\ttfamily static void com.\+ruralhousejsf.\+business\+Logic.\+App\+Facade.\+truncate (\begin{DoxyParamCaption}\item[{boolean}]{truncate\+Db }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Set to truncate the database data in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}.
+
+
+Set to truncate the database data in the next call of \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1business_logic_1_1_app_facade_a029bcceee98b9070b9f80abc54db45d6}{App\+Facade\#get\+Impl()}}. 
 
 
 \begin{DoxyParams}{Parámetros}

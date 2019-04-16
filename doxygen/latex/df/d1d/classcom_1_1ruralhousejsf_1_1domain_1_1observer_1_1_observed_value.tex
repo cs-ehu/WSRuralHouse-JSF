@@ -25,9 +25,9 @@ Optional$<$ T $>$ \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1observ
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1observer_1_1_observed_value_aeb8db23c0310aa0fd0d9bcb2da10fa74}{write\+Object}} (Object\+Output\+Stream out)  throws I\+O\+Exception 
-\item 
+\begin{DoxyCompactList}\small\item\em The write\+Object method is responsible for writing the state of the object for its particular class so that the corresponding read\+Object method can restore it. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1observer_1_1_observed_value_a51ae17b2577c4ffc87ccf4abca82ab3d}{read\+Object}} (Object\+Input\+Stream in)  throws I\+O\+Exception, Class\+Not\+Found\+Exception 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The read\+Object method is responsible for reading from the stream and restoring the classes fields. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atributos privados}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,7 +37,7 @@ Optional$<$ T $>$ \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1observ
 \begin{DoxyCompactItemize}
 \item 
 static final long \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1observer_1_1_observed_value_a01052aac89cda6c5f230343d40b54e89}{serial\+Version\+U\+ID}} = 8159940159964193507L
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Auto-\/generated serial version ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Otros miembros heredados}
 
 
@@ -98,7 +98,11 @@ Definición en la línea 42 del archivo Observed\+Value.\+java.
 \subsubsection{\texorpdfstring{readObject()}{readObject()}}
 {\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1observer_1_1_observed_value}{com.\+ruralhousejsf.\+domain.\+observer.\+Observed\+Value}}$<$ T $>$.read\+Object (\begin{DoxyParamCaption}\item[{Object\+Input\+Stream}]{in }\end{DoxyParamCaption}) throws I\+O\+Exception, Class\+Not\+Found\+Exception\hspace{0.3cm}{\ttfamily [private]}}
 
-The read\+Object method is responsible for reading from the stream and restoring the classes fields. It may call in.\+default\+Read\+Object to invoke the default mechanism for restoring the object\textquotesingle{}s non-\/static and non-\/transient fields. The default\+Read\+Object method uses information in the stream to assign the fields of the object saved in the stream with the correspondingly named fields in the current object. This handles the case when the class has evolved to add new fields. The method does not need to concern itself with the state belonging to its superclasses or subclasses. State is saved by writing the individual fields to the Object\+Output\+Stream using the write\+Object method or by using the methods for primitive data types supported by Data\+Output.
+
+
+The read\+Object method is responsible for reading from the stream and restoring the classes fields. 
+
+It may call in.\+default\+Read\+Object to invoke the default mechanism for restoring the object\textquotesingle{}s non-\/static and non-\/transient fields. The default\+Read\+Object method uses information in the stream to assign the fields of the object saved in the stream with the correspondingly named fields in the current object. This handles the case when the class has evolved to add new fields. The method does not need to concern itself with the state belonging to its superclasses or subclasses. State is saved by writing the individual fields to the Object\+Output\+Stream using the write\+Object method or by using the methods for primitive data types supported by Data\+Output.
 
 
 \begin{DoxyParams}{Parámetros}
@@ -147,7 +151,11 @@ Definición en la línea 28 del archivo Observed\+Value.\+java.
 \subsubsection{\texorpdfstring{writeObject()}{writeObject()}}
 {\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1observer_1_1_observed_value}{com.\+ruralhousejsf.\+domain.\+observer.\+Observed\+Value}}$<$ T $>$.write\+Object (\begin{DoxyParamCaption}\item[{Object\+Output\+Stream}]{out }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [private]}}
 
-The write\+Object method is responsible for writing the state of the object for its particular class so that the corresponding read\+Object method can restore it. The default mechanism for saving the Object\textquotesingle{}s fields can be invoked by calling out.\+default\+Write\+Object. The method does not need to concern itself with the state belonging to its superclasses or subclasses. State is saved by writing the individual fields to the Object\+Output\+Stream using the write\+Object method or by using the methods for primitive data types supported by Data\+Output.
+
+
+The write\+Object method is responsible for writing the state of the object for its particular class so that the corresponding read\+Object method can restore it. 
+
+The default mechanism for saving the Object\textquotesingle{}s fields can be invoked by calling out.\+default\+Write\+Object. The method does not need to concern itself with the state belonging to its superclasses or subclasses. State is saved by writing the individual fields to the Object\+Output\+Stream using the write\+Object method or by using the methods for primitive data types supported by Data\+Output.
 
 
 \begin{DoxyParams}{Parámetros}
@@ -177,7 +185,11 @@ Definición en la línea 62 del archivo Observed\+Value.\+java.
 \subsubsection{\texorpdfstring{serialVersionUID}{serialVersionUID}}
 {\footnotesize\ttfamily final long \mbox{\hyperlink{classcom_1_1ruralhousejsf_1_1domain_1_1observer_1_1_observed_value}{com.\+ruralhousejsf.\+domain.\+observer.\+Observed\+Value}}$<$ T $>$.serial\+Version\+U\+ID = 8159940159964193507L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-Auto-\/generated serial version ID 
+
+
+Auto-\/generated serial version ID. 
+
+
 
 Definición en la línea 93 del archivo Observed\+Value.\+java.
 
