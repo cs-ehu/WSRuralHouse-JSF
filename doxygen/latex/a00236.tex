@@ -1,0 +1,115 @@
+\hypertarget{a00236}{}\section{Referencia de la plantilla de la Interfaz com.\+ruralhousejsf.\+contract.\+Comparable\+Contract$<$ T extends Comparable$<$ T $>$}
+\label{a00236}\index{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$@{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$}}
+
+
+This interface defines tests to verify that the objects of each class that implements the \mbox{\hyperlink{}{Comparable}} interface, impose their total ordering with the expected behavior.  
+
+
+Diagrama de herencias de com.\+ruralhousejsf.\+contract.\+Comparable\+Contract$<$ T extends Comparable$<$ T $>$\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{a00236}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{a00236_a63e1e8c46f202f132c7f15b51a11ee27}{create\+Smaller\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Creates and returns a smaller value to use in the comparable tests. \end{DoxyCompactList}\item 
+default void \mbox{\hyperlink{a00236_ad21966d20e5fffd0fa13cd021c262f11}{compared\+To\+Itself}} ()
+\begin{DoxyCompactList}\small\item\em Compares the created value to itself to test that returns a zero value. \end{DoxyCompactList}\item 
+default void \mbox{\hyperlink{a00236_aa5df8ced74d7707d219de7d79eb04cb1}{compare\+To\+Smaller\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Compares the created value to a smaller value to test that returns a positive value. \end{DoxyCompactList}\item 
+default void \mbox{\hyperlink{a00236_aceb2f65e9d26e521c6dc0eb2cbe6a35d}{compare\+To\+Larger\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Compares the created value to a larger value to test that returns a negative value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+This interface defines tests to verify that the objects of each class that implements the \mbox{\hyperlink{}{Comparable}} interface, impose their total ordering with the expected behavior. 
+
+This ordering is referred to as the classes {\itshape natural ordering}, and the classes
+\begin{DoxyCode}{0}
+\DoxyCodeLine{compareTo }
+\end{DoxyCode}
+ method is referred to as its {\itshape natural comparison method}. 
+
+This class extends from \mbox{\hyperlink{a00244}{Testable}}, and in order to function correctly all the required methods must be implemented.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em $<$\+T$>$} & the type of objects that this object may be compared to\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Ver también}
+\mbox{\hyperlink{a00244}{Testable}} 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 26 del archivo Comparable\+Contract.\+java.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{a00236_ad21966d20e5fffd0fa13cd021c262f11}\label{a00236_ad21966d20e5fffd0fa13cd021c262f11}} 
+\index{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$@{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$}!comparedToItself@{comparedToItself}}
+\index{comparedToItself@{comparedToItself}!com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$@{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$}}
+\subsubsection{\texorpdfstring{comparedToItself()}{comparedToItself()}}
+{\footnotesize\ttfamily default void \mbox{\hyperlink{a00236}{com.\+ruralhousejsf.\+contract.\+Comparable\+Contract}}$<$ T extends Comparable$<$ T $>$.compared\+To\+Itself (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Compares the created value to itself to test that returns a zero value. 
+
+
+
+Definición en la línea 42 del archivo Comparable\+Contract.\+java.
+
+\mbox{\Hypertarget{a00236_aceb2f65e9d26e521c6dc0eb2cbe6a35d}\label{a00236_aceb2f65e9d26e521c6dc0eb2cbe6a35d}} 
+\index{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$@{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$}!compareToLargerValue@{compareToLargerValue}}
+\index{compareToLargerValue@{compareToLargerValue}!com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$@{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$}}
+\subsubsection{\texorpdfstring{compareToLargerValue()}{compareToLargerValue()}}
+{\footnotesize\ttfamily default void \mbox{\hyperlink{a00236}{com.\+ruralhousejsf.\+contract.\+Comparable\+Contract}}$<$ T extends Comparable$<$ T $>$.compare\+To\+Larger\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Compares the created value to a larger value to test that returns a negative value. 
+
+
+
+Definición en la línea 65 del archivo Comparable\+Contract.\+java.
+
+\mbox{\Hypertarget{a00236_aa5df8ced74d7707d219de7d79eb04cb1}\label{a00236_aa5df8ced74d7707d219de7d79eb04cb1}} 
+\index{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$@{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$}!compareToSmallerValue@{compareToSmallerValue}}
+\index{compareToSmallerValue@{compareToSmallerValue}!com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$@{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$}}
+\subsubsection{\texorpdfstring{compareToSmallerValue()}{compareToSmallerValue()}}
+{\footnotesize\ttfamily default void \mbox{\hyperlink{a00236}{com.\+ruralhousejsf.\+contract.\+Comparable\+Contract}}$<$ T extends Comparable$<$ T $>$.compare\+To\+Smaller\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Compares the created value to a smaller value to test that returns a positive value. 
+
+
+
+Definición en la línea 53 del archivo Comparable\+Contract.\+java.
+
+\mbox{\Hypertarget{a00236_a63e1e8c46f202f132c7f15b51a11ee27}\label{a00236_a63e1e8c46f202f132c7f15b51a11ee27}} 
+\index{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$@{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$}!createSmallerValue@{createSmallerValue}}
+\index{createSmallerValue@{createSmallerValue}!com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$@{com.ruralhousejsf.contract.ComparableContract$<$ T extends Comparable$<$ T $>$}}
+\subsubsection{\texorpdfstring{createSmallerValue()}{createSmallerValue()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{a00236}{com.\+ruralhousejsf.\+contract.\+Comparable\+Contract}}$<$ T extends Comparable$<$ T $>$.create\+Smaller\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates and returns a smaller value to use in the comparable tests. 
+
+~\newline
+ This method, for its correct execution, should return a value smaller than the returned by \mbox{\hyperlink{a00244_ae4546a381488faaba1ef7c0f8688de9c}{Testable\#create\+Value}}.
+
+\begin{DoxyReturn}{Devuelve}
+the created value 
+\end{DoxyReturn}
+
+
+La documentación para este interfaz fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+test/java/com/ruralhousejsf/contract/\mbox{\hyperlink{a00083}{Comparable\+Contract.\+java}}\end{DoxyCompactItemize}

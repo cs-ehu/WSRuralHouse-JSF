@@ -1,0 +1,363 @@
+\hypertarget{a00272}{}\section{Referencia de la Clase com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test}
+\label{a00272}\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+
+
+This class defines test to guarantee a correct and an expected result of the methods and classes that access the database.  
+
+
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{a00276}{Client\+Test}}
+\item 
+class \mbox{\hyperlink{a00280}{Offer\+Test}}
+\item 
+class \mbox{\hyperlink{a00284}{Rural\+House\+Test}}
+\end{DoxyCompactItemize}
+\subsection*{Funciones del \textquotesingle{}package\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00272_a45f50c1176ffaef90f33dccb27e03cdd}{before\+Each}} ()
+\end{DoxyCompactItemize}
+\subsection*{Funciones estáticas del \textquotesingle{}package\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{a00272_a385a9a721138e301ab9b775298eff369}{before\+All}} ()
+\item 
+static void \mbox{\hyperlink{a00272_ad178c485d2837875d915e6876d29862c}{after\+All}} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos Estáticos del \textquotesingle{}package\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+static final Logger \mbox{\hyperlink{a00272_a9eb49660cab06be45dd2c75727b59ed3}{L\+O\+G\+G\+ER}} = \mbox{\hyperlink{a00220_a520321643663e37d95761134a35505cd}{Console\+Logger.\+create\+Logger}}(Hibernate\+Data\+Access\+Test.\+class)
+\item 
+static final String \mbox{\hyperlink{a00272_ae42994f5a5d8bf916a38b64cda2788b1}{C\+L\+I\+E\+N\+T\+\_\+\+T\+E\+S\+T\+\_\+\+D\+A\+TA}} = \char`\"{}/Client\+Test\+Data.\+csv\char`\"{}
+\item 
+static final String \mbox{\hyperlink{a00272_a59951fd66def285f9ae4e140ee9eb8be}{O\+F\+F\+E\+R\+\_\+\+T\+E\+S\+T\+\_\+\+D\+A\+TA}} = \char`\"{}/Offer\+Test\+Data.\+csv\char`\"{}
+\item 
+static final String \mbox{\hyperlink{a00272_a8fbef10c94c800b06db31a91c4be95bf}{O\+F\+F\+E\+R\+\_\+\+B\+A\+D\+\_\+\+D\+A\+T\+E\+S\+\_\+\+D\+A\+TA}} = \char`\"{}/Offer\+Bad\+Dates.\+csv\char`\"{}
+\item 
+static final String \mbox{\hyperlink{a00272_a9f9d6116edd1cdeb60cf726a921d148f}{R\+U\+R\+A\+L\+H\+O\+U\+S\+E\+\_\+\+T\+E\+S\+T\+\_\+\+D\+A\+TA}} = \char`\"{}/Rural\+House\+Test\+Data.\+csv\char`\"{}
+\item 
+static \mbox{\hyperlink{a00136}{Application\+Facade\+Interface}} \mbox{\hyperlink{a00272_a80a8ded7f2e12687541427d97fdbe29a}{afi}}
+\item 
+static List$<$ \mbox{\hyperlink{a00164}{Client}} $>$ \mbox{\hyperlink{a00272_a9c323e2ca2ed9c802bff65a3a10d88f5}{client\+List}}
+\item 
+static List$<$ \mbox{\hyperlink{a00184}{Offer}} $>$ \mbox{\hyperlink{a00272_a75c40ab88ced6c053e2067b1515c18b9}{offer\+List}}
+\item 
+static List$<$ \mbox{\hyperlink{a00188}{Rural\+House}} $>$ \mbox{\hyperlink{a00272_a989d035f20b8a64527db2fbbd411943e}{rural\+House\+List}}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00164}{Client}} \mbox{\hyperlink{a00272_a971c94d6c41317c2cc8de024153f0dc9}{create\+Test\+Client}} (String username, String password)
+\begin{DoxyCompactList}\small\item\em Creates and stores a client to be used in the tests. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00184}{Offer}} \mbox{\hyperlink{a00272_adb47ff6c8ba0fc7e7327407a8c937c4a}{create\+Test\+Offer}} (\mbox{\hyperlink{a00188}{Rural\+House}} rural\+House, Local\+Date offer\+Start\+Date, Local\+Date offer\+End\+Date, double offer\+Price)  throws Bad\+Dates\+Exception 
+\begin{DoxyCompactList}\small\item\em Creates and stores an offer to be used in the tests. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00188}{Rural\+House}} \mbox{\hyperlink{a00272_a455296993315fc3b33f1c5806622ad32}{create\+Test\+Rural\+House}} (String description, String city)
+\begin{DoxyCompactList}\small\item\em Creates and stores a rural house to be used in the tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{a00272_a71fef61bb66234d92d84ddd795de842a}{remove\+Test\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Remove any test data added in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+This class defines test to guarantee a correct and an expected result of the methods and classes that access the database. 
+
+Before any test is run, the connection with the database is checked and if this check fails all the tests are aborted. 
+
+Definición en la línea 50 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{a00272_ad178c485d2837875d915e6876d29862c}\label{a00272_ad178c485d2837875d915e6876d29862c}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!afterAll@{afterAll}}
+\index{afterAll@{afterAll}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{afterAll()}{afterAll()}}
+{\footnotesize\ttfamily static void com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+after\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 81 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a385a9a721138e301ab9b775298eff369}\label{a00272_a385a9a721138e301ab9b775298eff369}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!beforeAll@{beforeAll}}
+\index{beforeAll@{beforeAll}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{beforeAll()}{beforeAll()}}
+{\footnotesize\ttfamily static void com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+before\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 66 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a45f50c1176ffaef90f33dccb27e03cdd}\label{a00272_a45f50c1176ffaef90f33dccb27e03cdd}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!beforeEach@{beforeEach}}
+\index{beforeEach@{beforeEach}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{beforeEach()}{beforeEach()}}
+{\footnotesize\ttfamily void com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+before\+Each (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definición en la línea 86 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a971c94d6c41317c2cc8de024153f0dc9}\label{a00272_a971c94d6c41317c2cc8de024153f0dc9}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!createTestClient@{createTestClient}}
+\index{createTestClient@{createTestClient}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{createTestClient()}{createTestClient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00164}{Client}} com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+create\+Test\+Client (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates and stores a client to be used in the tests. 
+
+~\newline
+ This method assumes that no
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{null} }
+\end{DoxyCode}
+ value will not be obtained when creating the client, in that extent, this method will not return a 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{null} }
+\end{DoxyCode}
+ value. 
+
+This value is added to a list for the later removal and to avoid to fill the database with invalid data.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em username} & the client user name \\
+\hline
+{\em password} & the client password\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+the created
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Client }
+\end{DoxyCode}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+Client 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 137 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_adb47ff6c8ba0fc7e7327407a8c937c4a}\label{a00272_adb47ff6c8ba0fc7e7327407a8c937c4a}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!createTestOffer@{createTestOffer}}
+\index{createTestOffer@{createTestOffer}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{createTestOffer()}{createTestOffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00184}{Offer}} com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+create\+Test\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00188}{Rural\+House}}}]{rural\+House,  }\item[{Local\+Date}]{offer\+Start\+Date,  }\item[{Local\+Date}]{offer\+End\+Date,  }\item[{double}]{offer\+Price }\end{DoxyParamCaption}) throws \mbox{\hyperlink{a00208}{Bad\+Dates\+Exception}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates and stores an offer to be used in the tests. 
+
+~\newline
+ This method assumes that no
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{null} }
+\end{DoxyCode}
+ value will not be obtained when creating the client, in that extent, this method will not return a 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{null} }
+\end{DoxyCode}
+ value. 
+
+This value is added to a list for the later removal and to avoid to fill the database with invalid data.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rural\+House} & this offers associated rural house\\
+\hline
+{\em start\+Date} & the offer start date \\
+\hline
+{\em end\+Date} & the offer end date \\
+\hline
+{\em price} & the cost per day of the offer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+the created
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Offer }
+\end{DoxyCode}
+ for the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RuralHouse }
+\end{DoxyCode}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Bad\+Dates\+Exception} & thrown when the start date is greater than the end date\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{Ver también}
+Offer 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 166 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a455296993315fc3b33f1c5806622ad32}\label{a00272_a455296993315fc3b33f1c5806622ad32}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!createTestRuralHouse@{createTestRuralHouse}}
+\index{createTestRuralHouse@{createTestRuralHouse}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{createTestRuralHouse()}{createTestRuralHouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00188}{Rural\+House}} com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+create\+Test\+Rural\+House (\begin{DoxyParamCaption}\item[{String}]{description,  }\item[{String}]{city }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates and stores a rural house to be used in the tests. 
+
+~\newline
+ This method assumes that no
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{null} }
+\end{DoxyCode}
+ value will not be obtained when creating the client, in that extent, this method will not return a 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{null} }
+\end{DoxyCode}
+ value. 
+
+This value is added to a list for the later removal and to avoid to fill the database with invalid data.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em description} & the rural house description \\
+\hline
+{\em city} & the rural house city\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+the created
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RuralHouse }
+\end{DoxyCode}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+Rural\+House 
+\end{DoxySeeAlso}
+
+
+Definición en la línea 191 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a71fef61bb66234d92d84ddd795de842a}\label{a00272_a71fef61bb66234d92d84ddd795de842a}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!removeTestData@{removeTestData}}
+\index{removeTestData@{removeTestData}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{removeTestData()}{removeTestData()}}
+{\footnotesize\ttfamily static void com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+remove\+Test\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Remove any test data added in the database. 
+
+~\newline
+ This method should be called at least once in the annotated method with \char`\"{}@code @after\+All @endcode \char`\"{}. 
+
+Definición en la línea 95 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{a00272_a80a8ded7f2e12687541427d97fdbe29a}\label{a00272_a80a8ded7f2e12687541427d97fdbe29a}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!afi@{afi}}
+\index{afi@{afi}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{afi}{afi}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00136}{Application\+Facade\+Interface}} com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+afi\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 59 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_ae42994f5a5d8bf916a38b64cda2788b1}\label{a00272_ae42994f5a5d8bf916a38b64cda2788b1}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!CLIENT\_TEST\_DATA@{CLIENT\_TEST\_DATA}}
+\index{CLIENT\_TEST\_DATA@{CLIENT\_TEST\_DATA}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{CLIENT\_TEST\_DATA}{CLIENT\_TEST\_DATA}}
+{\footnotesize\ttfamily final String com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+C\+L\+I\+E\+N\+T\+\_\+\+T\+E\+S\+T\+\_\+\+D\+A\+TA = \char`\"{}/Client\+Test\+Data.\+csv\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 54 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a9c323e2ca2ed9c802bff65a3a10d88f5}\label{a00272_a9c323e2ca2ed9c802bff65a3a10d88f5}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!clientList@{clientList}}
+\index{clientList@{clientList}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{clientList}{clientList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{a00164}{Client}}$>$ com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+client\+List\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 61 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a9eb49660cab06be45dd2c75727b59ed3}\label{a00272_a9eb49660cab06be45dd2c75727b59ed3}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!LOGGER@{LOGGER}}
+\index{LOGGER@{LOGGER}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{LOGGER}{LOGGER}}
+{\footnotesize\ttfamily final Logger com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+L\+O\+G\+G\+ER = \mbox{\hyperlink{a00220_a520321643663e37d95761134a35505cd}{Console\+Logger.\+create\+Logger}}(Hibernate\+Data\+Access\+Test.\+class)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 52 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a8fbef10c94c800b06db31a91c4be95bf}\label{a00272_a8fbef10c94c800b06db31a91c4be95bf}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!OFFER\_BAD\_DATES\_DATA@{OFFER\_BAD\_DATES\_DATA}}
+\index{OFFER\_BAD\_DATES\_DATA@{OFFER\_BAD\_DATES\_DATA}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{OFFER\_BAD\_DATES\_DATA}{OFFER\_BAD\_DATES\_DATA}}
+{\footnotesize\ttfamily final String com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+O\+F\+F\+E\+R\+\_\+\+B\+A\+D\+\_\+\+D\+A\+T\+E\+S\+\_\+\+D\+A\+TA = \char`\"{}/Offer\+Bad\+Dates.\+csv\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 56 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a59951fd66def285f9ae4e140ee9eb8be}\label{a00272_a59951fd66def285f9ae4e140ee9eb8be}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!OFFER\_TEST\_DATA@{OFFER\_TEST\_DATA}}
+\index{OFFER\_TEST\_DATA@{OFFER\_TEST\_DATA}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{OFFER\_TEST\_DATA}{OFFER\_TEST\_DATA}}
+{\footnotesize\ttfamily final String com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+O\+F\+F\+E\+R\+\_\+\+T\+E\+S\+T\+\_\+\+D\+A\+TA = \char`\"{}/Offer\+Test\+Data.\+csv\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 55 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a75c40ab88ced6c053e2067b1515c18b9}\label{a00272_a75c40ab88ced6c053e2067b1515c18b9}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!offerList@{offerList}}
+\index{offerList@{offerList}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{offerList}{offerList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{a00184}{Offer}}$>$ com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+offer\+List\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 62 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a9f9d6116edd1cdeb60cf726a921d148f}\label{a00272_a9f9d6116edd1cdeb60cf726a921d148f}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!RURALHOUSE\_TEST\_DATA@{RURALHOUSE\_TEST\_DATA}}
+\index{RURALHOUSE\_TEST\_DATA@{RURALHOUSE\_TEST\_DATA}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{RURALHOUSE\_TEST\_DATA}{RURALHOUSE\_TEST\_DATA}}
+{\footnotesize\ttfamily final String com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+R\+U\+R\+A\+L\+H\+O\+U\+S\+E\+\_\+\+T\+E\+S\+T\+\_\+\+D\+A\+TA = \char`\"{}/Rural\+House\+Test\+Data.\+csv\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 57 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+\mbox{\Hypertarget{a00272_a989d035f20b8a64527db2fbbd411943e}\label{a00272_a989d035f20b8a64527db2fbbd411943e}} 
+\index{com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}!ruralHouseList@{ruralHouseList}}
+\index{ruralHouseList@{ruralHouseList}!com.ruralhousejsf.HibernateDataAccessTest@{com.ruralhousejsf.HibernateDataAccessTest}}
+\subsubsection{\texorpdfstring{ruralHouseList}{ruralHouseList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{a00188}{Rural\+House}}$>$ com.\+ruralhousejsf.\+Hibernate\+Data\+Access\+Test.\+rural\+House\+List\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}
+
+
+
+Definición en la línea 63 del archivo Hibernate\+Data\+Access\+Test.\+java.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+test/java/com/ruralhousejsf/\mbox{\hyperlink{a00101}{Hibernate\+Data\+Access\+Test.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,714 @@
+\hypertarget{a00132}{}\section{Referencia de la Clase com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl}
+\label{a00132}\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+
+
+The.  
+
+
+Diagrama de herencias de com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{a00132}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00132_ad6ed360c754c5ba82a2b88bb4cf036f7}{Application\+Facade\+Impl}} (\mbox{\hyperlink{a00148}{Hibernate\+Data\+Access\+Interface}} \mbox{\hyperlink{a00132_a96ac80fe606a4649e5fbbbd24935690a}{data\+Access}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{a00132}{Application\+Facade\+Impl}} that requires a \mbox{\hyperlink{}{Hibernate\+Data\+Access\+Interface}}, which is in charge of the database access and the operations over the database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a00132_a78fc6968b9fec7aa475b322463b6bd92}{set\+Data\+Access}} (\mbox{\hyperlink{a00148}{Hibernate\+Data\+Access\+Interface}} \mbox{\hyperlink{a00132_a96ac80fe606a4649e5fbbbd24935690a}{data\+Access}})
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{}{Hibernate\+Data\+Access\+Interface}} for this business logic. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a00132_a5fe9f44c95b3459fb8999c26e5b934cb}{truncate\+DB}} ()
+\begin{DoxyCompactList}\small\item\em Truncate the data base. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{a00132_a1e6cbb70c9568899c86135b3264b431d}{initialize\+DB}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the data base. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00188}{Rural\+House}} \mbox{\hyperlink{a00132_a48b82f812a30271878f50b99ae16a24b}{create\+Rural\+House}} (String description, String city)
+\begin{DoxyCompactList}\small\item\em Creates and stores in the database a. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00184}{Offer}} \mbox{\hyperlink{a00132_acbf81cc6dc4bf9adf9ea7a85751edfc0}{create\+Offer}} (\mbox{\hyperlink{a00188}{Rural\+House}} rural\+House, Local\+Date start\+Date, Local\+Date end\+Date, double price)  throws Bad\+Dates\+Exception 
+\begin{DoxyCompactList}\small\item\em Creates and stores in the database an. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00184}{Offer}} \mbox{\hyperlink{a00132_a9aafb2ac6e91d643bc5dd1f5691d4075}{create\+Offer}} (\mbox{\hyperlink{a00188}{Rural\+House}} rural\+House, Date start\+Date, Date end\+Date, double price)  throws Bad\+Dates\+Exception 
+\begin{DoxyCompactList}\small\item\em Creates and stores in the database an. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00164}{Client}} \mbox{\hyperlink{a00132_ae48e63f3df5226e46e4a57a64d120823}{create\+Client}} (String username, String password)
+\begin{DoxyCompactList}\small\item\em Creates and stores in the database a. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{a00188}{Rural\+House}} $>$ \mbox{\hyperlink{a00132_a22bb7d4b98f51470315a81cd0d6f2290}{get\+All\+Rural\+Houses}} ()
+\begin{DoxyCompactList}\small\item\em Obtains all rural houses stored in the database. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{a00184}{Offer}} $>$ \mbox{\hyperlink{a00132_a131acc04c80b3860f98d713d3a8ea5a5}{get\+Offers}} (\mbox{\hyperlink{a00188}{Rural\+House}} rural\+House, Local\+Date start\+Date, Local\+Date end\+Date)  throws Bad\+Dates\+Exception 
+\begin{DoxyCompactList}\small\item\em Obtains all offers of a given. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{a00184}{Offer}} $>$ \mbox{\hyperlink{a00132_a178d3964ff871edce1f5a207331319ed}{get\+Offers}} (\mbox{\hyperlink{a00188}{Rural\+House}} rural\+House, Date start\+Date, Date end\+Date)  throws Bad\+Dates\+Exception 
+\begin{DoxyCompactList}\small\item\em Obtains all offers of a given. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{a00132_a7af883dece6a0de1e1be2b83e3d4a23f}{login}} (String username, String password)
+\begin{DoxyCompactList}\small\item\em Verifies that the login with the given user name and the password is correct and returns a boolean indicating if the login information is valid. \end{DoxyCompactList}\item 
+Optional$<$ \mbox{\hyperlink{a00164}{Client}} $>$ \mbox{\hyperlink{a00132_a249a902aa3507a04fb15ab5fcf1f082c}{get\+Client}} (String username, String password)
+\begin{DoxyCompactList}\small\item\em Obtains a. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{a00132_a19d9b0706fe39437efc379c3bc747e06}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em This. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funciones del \textquotesingle{}package\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+public$<$ T extends Serializable, U extends Serializable $>$ Optional$<$ T $>$ \mbox{\hyperlink{a00132_aab772c94cd469793cc01ec1418e29763}{get}} (Class$<$ T $>$ cls, U key)
+\begin{DoxyCompactList}\small\item\em Returns the persistent instance of the given entity class with the given key. \end{DoxyCompactList}\item 
+public$<$ T extends Serializable, U extends Serializable $>$ boolean \mbox{\hyperlink{a00132_a2a873fe74350d41be72c6fde461351fd}{exists}} (Class$<$ T $>$ cls, U key)
+\begin{DoxyCompactList}\small\item\em Check if exists the persistent instance with the given key. \end{DoxyCompactList}\item 
+public$<$ T extends Serializable, U extends Serializable $>$ void \mbox{\hyperlink{a00132_a9a11ee0688c0a679574bb3edb260f927}{delete}} (Class$<$ T $>$ cls, U key)
+\begin{DoxyCompactList}\small\item\em Delete the persistent instance with the given id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00148}{Hibernate\+Data\+Access\+Interface}} \mbox{\hyperlink{a00132_a96ac80fe606a4649e5fbbbd24935690a}{data\+Access}}
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final Logger \mbox{\hyperlink{a00132_a4d2aed9fcae945d5ffaa63947bb56cde}{L\+O\+G\+G\+ER}} = \mbox{\hyperlink{a00220_a520321643663e37d95761134a35505cd}{Console\+Logger.\+create\+Logger}}(Application\+Facade\+Impl.\+class)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+The. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{a00132_ad6ed360c754c5ba82a2b88bb4cf036f7}{ApplicationFacadeImpl}} }
+\end{DoxyCode}
+ is a class in charge of the business logic that implements the application facade and provides methods to access the data base and other necessary features by the application. 
+
+Definición en la línea 26 del archivo Application\+Facade\+Impl.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{a00132_ad6ed360c754c5ba82a2b88bb4cf036f7}\label{a00132_ad6ed360c754c5ba82a2b88bb4cf036f7}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!ApplicationFacadeImpl@{ApplicationFacadeImpl}}
+\index{ApplicationFacadeImpl@{ApplicationFacadeImpl}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{ApplicationFacadeImpl()}{ApplicationFacadeImpl()}}
+{\footnotesize\ttfamily com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+Application\+Facade\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00148}{Hibernate\+Data\+Access\+Interface}}}]{data\+Access }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{a00132}{Application\+Facade\+Impl}} that requires a \mbox{\hyperlink{}{Hibernate\+Data\+Access\+Interface}}, which is in charge of the database access and the operations over the database. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{a00112}{data\+Access}}} & the data access class \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea 37 del archivo Application\+Facade\+Impl.\+java.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{a00132_ae48e63f3df5226e46e4a57a64d120823}\label{a00132_ae48e63f3df5226e46e4a57a64d120823}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!createClient@{createClient}}
+\index{createClient@{createClient}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{createClient()}{createClient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00164}{Client}} com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+create\+Client (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+
+Creates and stores in the database a. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Client }
+\end{DoxyCode}
+ with the passed user name and password.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em username} & the client user name \\
+\hline
+{\em password} & the client password\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+the created
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Client }
+\end{DoxyCode}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+Client 
+\end{DoxySeeAlso}
+
+
+Implementa \mbox{\hyperlink{a00136_acb939a4c57b1136e2e8d1c7b661c10af}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 76 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_acbf81cc6dc4bf9adf9ea7a85751edfc0}\label{a00132_acbf81cc6dc4bf9adf9ea7a85751edfc0}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!createOffer@{createOffer}}
+\index{createOffer@{createOffer}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{createOffer()}{createOffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00184}{Offer}} com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+create\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00188}{Rural\+House}}}]{rural\+House,  }\item[{Local\+Date}]{start\+Date,  }\item[{Local\+Date}]{end\+Date,  }\item[{double}]{price }\end{DoxyParamCaption}) throws \mbox{\hyperlink{a00208}{Bad\+Dates\+Exception}}}
+
+
+
+Creates and stores in the database an. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Offer }
+\end{DoxyCode}
+ for the given
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RuralHouse }
+\end{DoxyCode}
+ that will start and end in the given dates, and will have the passed price.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rural\+House} & this offers associated rural house\\
+\hline
+{\em start\+Date} & the offer start date \\
+\hline
+{\em end\+Date} & the offer end date \\
+\hline
+{\em price} & the cost per day of the offer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+the created
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Offer }
+\end{DoxyCode}
+ for the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RuralHouse }
+\end{DoxyCode}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Bad\+Dates\+Exception} & thrown when the start date is greater than the end date\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{Ver también}
+Offer 
+
+Rural\+House 
+\end{DoxySeeAlso}
+
+
+Implementa \mbox{\hyperlink{a00136_a5a056a1b07c8ee83c1d540812b0a880d}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 64 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a9aafb2ac6e91d643bc5dd1f5691d4075}\label{a00132_a9aafb2ac6e91d643bc5dd1f5691d4075}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!createOffer@{createOffer}}
+\index{createOffer@{createOffer}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{createOffer()}{createOffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00184}{Offer}} com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+create\+Offer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00188}{Rural\+House}}}]{rural\+House,  }\item[{Date}]{start\+Date,  }\item[{Date}]{end\+Date,  }\item[{double}]{price }\end{DoxyParamCaption}) throws \mbox{\hyperlink{a00208}{Bad\+Dates\+Exception}}}
+
+
+
+Creates and stores in the database an. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Offer }
+\end{DoxyCode}
+ for the given
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RuralHouse }
+\end{DoxyCode}
+ that will start and end in the given dates, and will have the passed price.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rural\+House} & this offers associated rural house\\
+\hline
+{\em start\+Date} & the offer start date \\
+\hline
+{\em end\+Date} & the offer end date \\
+\hline
+{\em price} & the cost per day of the offer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Offer }
+\end{DoxyCode}
+ for the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RuralHouse }
+\end{DoxyCode}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Bad\+Dates\+Exception} & thrown when the start date is greater than the end date\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{Ver también}
+Offer 
+
+Rural\+House 
+\end{DoxySeeAlso}
+
+
+Implementa \mbox{\hyperlink{a00136_afaa6b314fb684fe1121f062481f2bcd9}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 69 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a48b82f812a30271878f50b99ae16a24b}\label{a00132_a48b82f812a30271878f50b99ae16a24b}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!createRuralHouse@{createRuralHouse}}
+\index{createRuralHouse@{createRuralHouse}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{createRuralHouse()}{createRuralHouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00188}{Rural\+House}} com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+create\+Rural\+House (\begin{DoxyParamCaption}\item[{String}]{description,  }\item[{String}]{city }\end{DoxyParamCaption})}
+
+
+
+Creates and stores in the database a. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RuralHouse }
+\end{DoxyCode}
+ in the database with his description and his city.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em description} & the rural house description \\
+\hline
+{\em city} & the rural house city\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+the created
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RuralHouse }
+\end{DoxyCode}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+Rural\+House 
+\end{DoxySeeAlso}
+
+
+Implementa \mbox{\hyperlink{a00136_a7fc244cf74494e50a01148496d1b45ad}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 57 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a9a11ee0688c0a679574bb3edb260f927}\label{a00132_a9a11ee0688c0a679574bb3edb260f927}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!delete@{delete}}
+\index{delete@{delete}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily public$<$T extends Serializable, U extends Serializable$>$ void com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+delete (\begin{DoxyParamCaption}\item[{Class$<$ T $>$}]{cls,  }\item[{U}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Delete the persistent instance with the given id. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em $<$\+T$>$} & the class type \\
+\hline
+{\em $<$\+U$>$} & the key type\\
+\hline
+{\em cls} & the instance class \\
+\hline
+{\em key} & the instance key \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \mbox{\hyperlink{a00136_ae1d7f5b5d748492f7fab3d621347ffeb}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 124 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a2a873fe74350d41be72c6fde461351fd}\label{a00132_a2a873fe74350d41be72c6fde461351fd}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!exists@{exists}}
+\index{exists@{exists}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily public$<$T extends Serializable, U extends Serializable$>$ boolean com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+exists (\begin{DoxyParamCaption}\item[{Class$<$ T $>$}]{cls,  }\item[{U}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Check if exists the persistent instance with the given key. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em $<$\+T$>$} & the class type \\
+\hline
+{\em $<$\+U$>$} & the key type\\
+\hline
+{\em cls} & the instance class \\
+\hline
+{\em key} & the instance key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+{\ttfamily true} if exists the persistent instance, {\ttfamily false} otherwise 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{a00136_a044c60e4bee5202364454401446b3376}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 118 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_aab772c94cd469793cc01ec1418e29763}\label{a00132_aab772c94cd469793cc01ec1418e29763}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!get@{get}}
+\index{get@{get}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily public$<$T extends Serializable, U extends Serializable$>$ Optional$<$T$>$ com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+get (\begin{DoxyParamCaption}\item[{Class$<$ T $>$}]{cls,  }\item[{U}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Returns the persistent instance of the given entity class with the given key. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em $<$\+T$>$} & the class type \\
+\hline
+{\em $<$\+U$>$} & the key type\\
+\hline
+{\em cls} & the instance class \\
+\hline
+{\em key} & the instance key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+{\ttfamily Optional} with the persistent instance, or {\ttfamily Optional.\+empty()} if no persistent instance is found
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+Optional 
+\end{DoxySeeAlso}
+
+
+Implementa \mbox{\hyperlink{a00136_ab34954db52378fc9370d4da9a09100c4}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 112 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a22bb7d4b98f51470315a81cd0d6f2290}\label{a00132_a22bb7d4b98f51470315a81cd0d6f2290}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!getAllRuralHouses@{getAllRuralHouses}}
+\index{getAllRuralHouses@{getAllRuralHouses}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{getAllRuralHouses()}{getAllRuralHouses()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{a00188}{Rural\+House}}$>$ com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+get\+All\+Rural\+Houses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtains all rural houses stored in the database. 
+
+\begin{DoxyReturn}{Devuelve}
+list of rural houses
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+Rural\+House 
+\end{DoxySeeAlso}
+
+
+Implementa \mbox{\hyperlink{a00136_aba85657d1479d51b7bf1bd17d66d0513}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 82 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a249a902aa3507a04fb15ab5fcf1f082c}\label{a00132_a249a902aa3507a04fb15ab5fcf1f082c}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!getClient@{getClient}}
+\index{getClient@{getClient}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{getClient()}{getClient()}}
+{\footnotesize\ttfamily Optional$<$\mbox{\hyperlink{a00164}{Client}}$>$ com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+get\+Client (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+
+Obtains a. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Client }
+\end{DoxyCode}
+ with the given user name and the password, if exists and is found.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em username} & the client user name \\
+\hline
+{\em password} & the client password\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+optional containing the found client or an {\ttfamily Optional.\+Empty()} if none was found
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+Client 
+
+Optional 
+\end{DoxySeeAlso}
+
+
+Implementa \mbox{\hyperlink{a00136_af9901ddc9cbe77aaa08085c3c19167c6}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 106 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a131acc04c80b3860f98d713d3a8ea5a5}\label{a00132_a131acc04c80b3860f98d713d3a8ea5a5}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!getOffers@{getOffers}}
+\index{getOffers@{getOffers}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{getOffers()}{getOffers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{a00184}{Offer}}$>$ com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+get\+Offers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00188}{Rural\+House}}}]{rural\+House,  }\item[{Local\+Date}]{start\+Date,  }\item[{Local\+Date}]{end\+Date }\end{DoxyParamCaption}) throws \mbox{\hyperlink{a00208}{Bad\+Dates\+Exception}}}
+
+
+
+Obtains all offers of a given. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RuralHouse }
+\end{DoxyCode}
+ between the defined start and end dates range (both inclusive).
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rural\+House} & the rural house to apply this search \\
+\hline
+{\em start\+Date} & the start date\\
+\hline
+{\em end\+Date} & the end date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+list of offers between both dates of the given rural house
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Bad\+Dates\+Exception} & thrown when the start date is greater than the end date\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{Ver también}
+Offer 
+
+Rural\+House 
+\end{DoxySeeAlso}
+
+
+Implementa \mbox{\hyperlink{a00136_a31b31b351fd53d7eabe3346b043dc744}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 88 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a178d3964ff871edce1f5a207331319ed}\label{a00132_a178d3964ff871edce1f5a207331319ed}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!getOffers@{getOffers}}
+\index{getOffers@{getOffers}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{getOffers()}{getOffers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{a00184}{Offer}}$>$ com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+get\+Offers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00188}{Rural\+House}}}]{rural\+House,  }\item[{Date}]{start\+Date,  }\item[{Date}]{end\+Date }\end{DoxyParamCaption}) throws \mbox{\hyperlink{a00208}{Bad\+Dates\+Exception}}}
+
+
+
+Obtains all offers of a given. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RuralHouse }
+\end{DoxyCode}
+ between the defined start and end dates range (both inclusive).
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rural\+House} & the rural house to apply this search \\
+\hline
+{\em start\+Date} & the start date\\
+\hline
+{\em end\+Date} & the end date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+list of offers between both dates of the given rural house
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Bad\+Dates\+Exception} & thrown when the start date is greater than the end date\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{Ver también}
+Offer 
+
+Rural\+House 
+\end{DoxySeeAlso}
+
+
+Implementa \mbox{\hyperlink{a00136_a1ce3b82ceb8bda252ff3a54bab3e1c69}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 93 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a1e6cbb70c9568899c86135b3264b431d}\label{a00132_a1e6cbb70c9568899c86135b3264b431d}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!initializeDB@{initializeDB}}
+\index{initializeDB@{initializeDB}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{initializeDB()}{initializeDB()}}
+{\footnotesize\ttfamily void com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+initialize\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the data base. 
+
+
+
+Implementa \mbox{\hyperlink{a00136_a4670319006cee17060e0c84695d7195f}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 52 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a7af883dece6a0de1e1be2b83e3d4a23f}\label{a00132_a7af883dece6a0de1e1be2b83e3d4a23f}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!login@{login}}
+\index{login@{login}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily boolean com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+login (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+
+Verifies that the login with the given user name and the password is correct and returns a boolean indicating if the login information is valid. 
+
+\begin{quote}
+This only verifies if the login should succeed, this does not make any further operations than the mentioned here. \end{quote}
+
+
+
+\begin{DoxyParams}{Parámetros}
+{\em username} & the client user name \\
+\hline
+{\em password} & the client password\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{true} }
+\end{DoxyCode}
+ if the operation is successful,
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{false} }
+\end{DoxyCode}
+ otherwise
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+Client 
+\end{DoxySeeAlso}
+
+
+Implementa \mbox{\hyperlink{a00136_a75cc2d20f7df7b8872333cca281bf343}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 99 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a19d9b0706fe39437efc379c3bc747e06}\label{a00132_a19d9b0706fe39437efc379c3bc747e06}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!main@{main}}
+\index{main@{main}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{a00132_a19d9b0706fe39437efc379c3bc747e06}{main}} }
+\end{DoxyCode}
+ is used for test purposes.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em args} & the arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Obsoleto}
+\item[\mbox{\hyperlink{a00107__deprecated000001}{Obsoleto}}]Planned for removal \end{DoxyRefDesc}
+
+
+Definición en la línea 136 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a78fc6968b9fec7aa475b322463b6bd92}\label{a00132_a78fc6968b9fec7aa475b322463b6bd92}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!setDataAccess@{setDataAccess}}
+\index{setDataAccess@{setDataAccess}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{setDataAccess()}{setDataAccess()}}
+{\footnotesize\ttfamily void com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+set\+Data\+Access (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a00148}{Hibernate\+Data\+Access\+Interface}}}]{data\+Access }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{}{Hibernate\+Data\+Access\+Interface}} for this business logic. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em \mbox{\hyperlink{a00112}{data\+Access}}} & the facade data access \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \mbox{\hyperlink{a00136_a8bb95aa007a4d95b32ed838ae40406c0}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 42 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a5fe9f44c95b3459fb8999c26e5b934cb}\label{a00132_a5fe9f44c95b3459fb8999c26e5b934cb}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!truncateDB@{truncateDB}}
+\index{truncateDB@{truncateDB}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{truncateDB()}{truncateDB()}}
+{\footnotesize\ttfamily void com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+truncate\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Truncate the data base. 
+
+
+
+Implementa \mbox{\hyperlink{a00136_aeb85aa3c5dd08bc15e08cc0d4c36882e}{com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Interface}}.
+
+
+
+Definición en la línea 47 del archivo Application\+Facade\+Impl.\+java.
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{a00132_a96ac80fe606a4649e5fbbbd24935690a}\label{a00132_a96ac80fe606a4649e5fbbbd24935690a}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!dataAccess@{dataAccess}}
+\index{dataAccess@{dataAccess}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{dataAccess}{dataAccess}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00148}{Hibernate\+Data\+Access\+Interface}} com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+data\+Access\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 28 del archivo Application\+Facade\+Impl.\+java.
+
+\mbox{\Hypertarget{a00132_a4d2aed9fcae945d5ffaa63947bb56cde}\label{a00132_a4d2aed9fcae945d5ffaa63947bb56cde}} 
+\index{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}!LOGGER@{LOGGER}}
+\index{LOGGER@{LOGGER}!com.ruralhousejsf.businessLogic.ApplicationFacadeImpl@{com.ruralhousejsf.businessLogic.ApplicationFacadeImpl}}
+\subsubsection{\texorpdfstring{LOGGER}{LOGGER}}
+{\footnotesize\ttfamily final Logger com.\+ruralhousejsf.\+business\+Logic.\+Application\+Facade\+Impl.\+L\+O\+G\+G\+ER = \mbox{\hyperlink{a00220_a520321643663e37d95761134a35505cd}{Console\+Logger.\+create\+Logger}}(Application\+Facade\+Impl.\+class)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 29 del archivo Application\+Facade\+Impl.\+java.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+main/java/com/ruralhousejsf/business\+Logic/\mbox{\hyperlink{a00005}{Application\+Facade\+Impl.\+java}}\end{DoxyCompactItemize}

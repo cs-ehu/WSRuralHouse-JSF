@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WSRuralHouse-JSF: Fichero Fuente test/java/com/ruralhousejsf/extension/DataBaseConnectionExtension.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WSRuralHouse-JSF
+   &#160;<span id="projectnumber">0.3</span>
+   </div>
+   <div id="projectbrief">Proyecto de la asignatura IS1 y extendido durante IS2. Es una aplicación de escritorio sobre reservas para casas rurales, durante IS2 se traspasó a web.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_13e138d54eb8818da29c3992edef070a.html">test</a></li><li class="navelem"><a class="el" href="dir_0b4ce18f776fc30c1c4e48f45e46235e.html">java</a></li><li class="navelem"><a class="el" href="dir_dd6b2983467dbb34eaa9f8a26a31365f.html">com</a></li><li class="navelem"><a class="el" href="dir_a93bdf1646babe24f658c491742e56e6.html">ruralhousejsf</a></li><li class="navelem"><a class="el" href="dir_e7e3af808e73e8b4ad18683bad5b3cfb.html">extension</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">DataBaseConnectionExtension.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00095.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="a00124.html">    1</a></span>&#160;<span class="keyword">package </span>com.ruralhousejsf.extension;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> <span class="keyword">static</span> org.junit.jupiter.api.Assertions.assertTrue;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">import</span> java.sql.Connection;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">import</span> java.sql.DriverManager;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">import</span> org.apache.log4j.Logger;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">import</span> org.junit.jupiter.api.extension.BeforeAllCallback;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">import</span> org.junit.jupiter.api.extension.ExtensionContext;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">import</span> <a class="code" href="a00109.html">com</a>.<a class="code" href="a00110.html">ruralhousejsf</a>.<a class="code" href="a00112.html">dataAccess</a>.<a class="code" href="a00113.html">util</a>.<a class="code" href="a00156.html">ExponentialBackOff</a>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">import</span> <a class="code" href="a00109.html">com</a>.<a class="code" href="a00110.html">ruralhousejsf</a>.<a class="code" href="a00119.html">logger</a>.<a class="code" href="a00220.html">ConsoleLogger</a>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00264.html">   26</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="a00264.html">DataBaseConnectionExtension</a> <span class="keyword">implements</span> BeforeAllCallback {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00264.html#a936421171342cb936e683bceb8e819e8">   28</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger <a class="code" href="a00264.html#a936421171342cb936e683bceb8e819e8">LOGGER</a> = <a class="code" href="a00220.html">ConsoleLogger</a>.<a class="code" href="a00220.html#a520321643663e37d95761134a35505cd">createLogger</a>(<a class="code" href="a00264.html">DataBaseConnectionExtension</a>.class);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00264.html#adbba54504b8c15c35363b8c6ee62772f">   30</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String <a class="code" href="a00264.html#adbba54504b8c15c35363b8c6ee62772f">DRIVER</a> = <span class="stringliteral">&quot;com.mysql.jdbc.Driver&quot;</span>;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00264.html#aec89224948925eb2f40d169ba4dc00a9">   31</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String <a class="code" href="a00264.html#aec89224948925eb2f40d169ba4dc00a9">URL</a> = <span class="stringliteral">&quot;jdbc:mysql://localhost/HibernateRuralHouseJSF?useSSL=false&quot;</span>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00264.html#a87696d6ea7d62869301b08d9264182b0">   32</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String <a class="code" href="a00264.html#a87696d6ea7d62869301b08d9264182b0">USER</a> = <span class="stringliteral">&quot;root&quot;</span>;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00264.html#a8b37073a138c653895098f4a0c0f661f">   33</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String <a class="code" href="a00264.html#a8b37073a138c653895098f4a0c0f661f">PASSWORD</a> = <span class="stringliteral">&quot;root&quot;</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    @Override</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a00264.html#ae1fe703d5f0bdd5f29f0f4b9f0645e3e">   48</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="a00264.html#ae1fe703d5f0bdd5f29f0f4b9f0645e3e">beforeAll</a>(ExtensionContext context) <span class="keywordflow">throws</span> Exception {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">boolean</span> success = <span class="keyword">false</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        Class.forName(<a class="code" href="a00264.html#adbba54504b8c15c35363b8c6ee62772f">DRIVER</a>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">try</span>(Connection connection = <a class="code" href="a00156.html">ExponentialBackOff</a>.<a class="code" href="a00156.html#a7c14ce7a46732baa58e3b0bf06455a9b">execute</a>(() -&gt; DriverManager.getConnection(<a class="code" href="a00264.html#aec89224948925eb2f40d169ba4dc00a9">URL</a>, <a class="code" href="a00264.html#a87696d6ea7d62869301b08d9264182b0">USER</a>, <a class="code" href="a00264.html#a8b37073a138c653895098f4a0c0f661f">PASSWORD</a>))) {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            success = <span class="keyword">true</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        } <span class="keywordflow">catch</span> (Exception e) {</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            String msg = <span class="stringliteral">&quot;Exception thrown&quot;</span>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span>(context.getElement().isPresent()) {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                msg += <span class="stringliteral">&quot; in &quot;</span> + context.getElement().get();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            }</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="a00264.html#a936421171342cb936e683bceb8e819e8">LOGGER</a>.error(msg, e);               </div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="a00264.html#a936421171342cb936e683bceb8e819e8">LOGGER</a>.info(<span class="stringliteral">&quot;Connection test succeeded: &quot;</span> + success);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        assertTrue(success, () -&gt; <span class="stringliteral">&quot;Could not connect to the database. Connection success &quot;</span>);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div><div class="ttc" id="a00110_html"><div class="ttname"><a href="a00110.html">com.ruralhousejsf</a></div></div>
+<div class="ttc" id="a00156_html_a7c14ce7a46732baa58e3b0bf06455a9b"><div class="ttname"><a href="a00156.html#a7c14ce7a46732baa58e3b0bf06455a9b">com.ruralhousejsf.dataAccess.util.ExponentialBackOff.execute</a></div><div class="ttdeci">static&lt; T &gt; T execute(ExponentialBackOffInterface&lt; T &gt; method)</div><div class="ttdef"><b>Definition:</b> <a href="a00023_source.html#l00029">ExponentialBackOff.java:29</a></div></div>
+<div class="ttc" id="a00264_html_a87696d6ea7d62869301b08d9264182b0"><div class="ttname"><a href="a00264.html#a87696d6ea7d62869301b08d9264182b0">com.ruralhousejsf.extension.DataBaseConnectionExtension.USER</a></div><div class="ttdeci">static final String USER</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00032">DataBaseConnectionExtension.java:32</a></div></div>
+<div class="ttc" id="a00156_html"><div class="ttname"><a href="a00156.html">com.ruralhousejsf.dataAccess.util.ExponentialBackOff</a></div><div class="ttdef"><b>Definition:</b> <a href="a00023_source.html#l00014">ExponentialBackOff.java:14</a></div></div>
+<div class="ttc" id="a00220_html_a520321643663e37d95761134a35505cd"><div class="ttname"><a href="a00220.html#a520321643663e37d95761134a35505cd">com.ruralhousejsf.logger.ConsoleLogger.createLogger</a></div><div class="ttdeci">static Logger createLogger()</div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00027">ConsoleLogger.java:27</a></div></div>
+<div class="ttc" id="a00264_html"><div class="ttname"><a href="a00264.html">com.ruralhousejsf.extension.DataBaseConnectionExtension</a></div><div class="ttdoc">The DataBaseConnectionExtension class implements the BeforeAllCallback interface, which overrides the...</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00026">DataBaseConnectionExtension.java:26</a></div></div>
+<div class="ttc" id="a00109_html"><div class="ttname"><a href="a00109.html">com</a></div></div>
+<div class="ttc" id="a00112_html"><div class="ttname"><a href="a00112.html">com.ruralhousejsf.dataAccess</a></div><div class="ttdef"><b>Definition:</b> <a href="a00014_source.html#l00001">HibernateDataAccess.java:1</a></div></div>
+<div class="ttc" id="a00220_html"><div class="ttname"><a href="a00220.html">com.ruralhousejsf.logger.ConsoleLogger</a></div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00010">ConsoleLogger.java:10</a></div></div>
+<div class="ttc" id="a00113_html"><div class="ttname"><a href="a00113.html">com.ruralhousejsf.dataAccess.util</a></div><div class="ttdef"><b>Definition:</b> <a href="a00023_source.html#l00001">ExponentialBackOff.java:1</a></div></div>
+<div class="ttc" id="a00264_html_a936421171342cb936e683bceb8e819e8"><div class="ttname"><a href="a00264.html#a936421171342cb936e683bceb8e819e8">com.ruralhousejsf.extension.DataBaseConnectionExtension.LOGGER</a></div><div class="ttdeci">static final Logger LOGGER</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00028">DataBaseConnectionExtension.java:28</a></div></div>
+<div class="ttc" id="a00264_html_a8b37073a138c653895098f4a0c0f661f"><div class="ttname"><a href="a00264.html#a8b37073a138c653895098f4a0c0f661f">com.ruralhousejsf.extension.DataBaseConnectionExtension.PASSWORD</a></div><div class="ttdeci">static final String PASSWORD</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00033">DataBaseConnectionExtension.java:33</a></div></div>
+<div class="ttc" id="a00264_html_adbba54504b8c15c35363b8c6ee62772f"><div class="ttname"><a href="a00264.html#adbba54504b8c15c35363b8c6ee62772f">com.ruralhousejsf.extension.DataBaseConnectionExtension.DRIVER</a></div><div class="ttdeci">static final String DRIVER</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00030">DataBaseConnectionExtension.java:30</a></div></div>
+<div class="ttc" id="a00264_html_ae1fe703d5f0bdd5f29f0f4b9f0645e3e"><div class="ttname"><a href="a00264.html#ae1fe703d5f0bdd5f29f0f4b9f0645e3e">com.ruralhousejsf.extension.DataBaseConnectionExtension.beforeAll</a></div><div class="ttdeci">void beforeAll(ExtensionContext context)</div><div class="ttdoc">This callback is invoked once before all tests in the current container, and its only purpose is to t...</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00048">DataBaseConnectionExtension.java:48</a></div></div>
+<div class="ttc" id="a00264_html_aec89224948925eb2f40d169ba4dc00a9"><div class="ttname"><a href="a00264.html#aec89224948925eb2f40d169ba4dc00a9">com.ruralhousejsf.extension.DataBaseConnectionExtension.URL</a></div><div class="ttdeci">static final String URL</div><div class="ttdef"><b>Definition:</b> <a href="a00095_source.html#l00031">DataBaseConnectionExtension.java:31</a></div></div>
+<div class="ttc" id="a00119_html"><div class="ttname"><a href="a00119.html">com.ruralhousejsf.logger</a></div><div class="ttdef"><b>Definition:</b> <a href="a00071_source.html#l00001">ConsoleLogger.java:1</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WSRuralHouse-JSF: Fichero Fuente main/java/com/ruralhousejsf/dataAccess/HibernateSession.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">WSRuralHouse-JSF
+   &#160;<span id="projectnumber">0.3</span>
+   </div>
+   <div id="projectbrief">Proyecto de la asignatura IS1 y extendido durante IS2. Es una aplicación de escritorio sobre reservas para casas rurales, durante IS2 se traspasó a web.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5c982d53a68cdbcd421152b4020263a9.html">main</a></li><li class="navelem"><a class="el" href="dir_e033298f2156e5e9d9e90a60ada84467.html">java</a></li><li class="navelem"><a class="el" href="dir_f6275d00a9872344b69f7cf7b1ae183d.html">com</a></li><li class="navelem"><a class="el" href="dir_b0d0c4e259ae560a6f5bbb9ac759f401.html">ruralhousejsf</a></li><li class="navelem"><a class="el" href="dir_7aba5752ef676eb549640b5681e22911.html">dataAccess</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">HibernateSession.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00020.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>com.ruralhousejsf.dataAccess;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> org.hibernate.SessionFactory;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> org.hibernate.cfg.Configuration;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="a00152.html">    6</a></span>&#160;<span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class </span><a class="code" href="a00152.html">HibernateSession</a> {</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="a00152.html#abb795a9ae4989d1caa92621d53529fe1">    8</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> SessionFactory <a class="code" href="a00152.html#abb795a9ae4989d1caa92621d53529fe1">SESSION_FACTORY</a> = <a class="code" href="a00152.html#a54c628cf25032f8511a199671e73820d">buildSessionFactory</a>();</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    </div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="a00152.html#aaa61245491eaeb6fb6e4d5d4fb23273c">   10</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="a00152.html#aaa61245491eaeb6fb6e4d5d4fb23273c">HibernateSession</a>() {}</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="a00152.html#a54c628cf25032f8511a199671e73820d">   12</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> SessionFactory <a class="code" href="a00152.html#a54c628cf25032f8511a199671e73820d">buildSessionFactory</a>() {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> Configuration().configure().buildSessionFactory();</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        } <span class="keywordflow">catch</span> (Throwable e) {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            System.err.println(<span class="stringliteral">&quot;Error during the creation of session: &quot;</span> + e);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> ExceptionInInitializerError(e);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="a00152.html#ac3420369289a3eb4051f880815d4b5c1">   21</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> SessionFactory <a class="code" href="a00152.html#ac3420369289a3eb4051f880815d4b5c1">getSessionFactory</a>() {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00152.html#abb795a9ae4989d1caa92621d53529fe1">SESSION_FACTORY</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="ttc" id="a00152_html_a54c628cf25032f8511a199671e73820d"><div class="ttname"><a href="a00152.html#a54c628cf25032f8511a199671e73820d">com.ruralhousejsf.dataAccess.HibernateSession.buildSessionFactory</a></div><div class="ttdeci">static SessionFactory buildSessionFactory()</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00012">HibernateSession.java:12</a></div></div>
+<div class="ttc" id="a00152_html_aaa61245491eaeb6fb6e4d5d4fb23273c"><div class="ttname"><a href="a00152.html#aaa61245491eaeb6fb6e4d5d4fb23273c">com.ruralhousejsf.dataAccess.HibernateSession.HibernateSession</a></div><div class="ttdeci">HibernateSession()</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00010">HibernateSession.java:10</a></div></div>
+<div class="ttc" id="a00152_html_ac3420369289a3eb4051f880815d4b5c1"><div class="ttname"><a href="a00152.html#ac3420369289a3eb4051f880815d4b5c1">com.ruralhousejsf.dataAccess.HibernateSession.getSessionFactory</a></div><div class="ttdeci">static SessionFactory getSessionFactory()</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00021">HibernateSession.java:21</a></div></div>
+<div class="ttc" id="a00152_html"><div class="ttname"><a href="a00152.html">com.ruralhousejsf.dataAccess.HibernateSession</a></div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00006">HibernateSession.java:6</a></div></div>
+<div class="ttc" id="a00152_html_abb795a9ae4989d1caa92621d53529fe1"><div class="ttname"><a href="a00152.html#abb795a9ae4989d1caa92621d53529fe1">com.ruralhousejsf.dataAccess.HibernateSession.SESSION_FACTORY</a></div><div class="ttdeci">static final SessionFactory SESSION_FACTORY</div><div class="ttdef"><b>Definition:</b> <a href="a00020_source.html#l00008">HibernateSession.java:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>
